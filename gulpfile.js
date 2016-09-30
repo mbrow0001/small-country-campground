@@ -22,7 +22,7 @@ gulp.task('sass', function() {
       .pipe(gulp.dest('./css'))
 });
 
-gulp.task('sass:watch', function() {
+gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
@@ -31,15 +31,8 @@ gulp.task('sass:watch', function() {
 // Uglifies and concat all JS files into one
 gulp.task('scripts', function() {
   gulp.src([
-    basePaths.dev + 'js/tether.js', // Must be loaded before BS4
-
-    // Start - All BS4 stuff
-    basePaths.dev + 'js/bootstrap4/bootstrap.js', 
-
-    // End - All BS4 stuff
-
-    basePaths.dev + 'js/skip-link-focus-fix.js'
-    ])
+  	'./src/js/jquery.js',
+  	'./src/js/**/*.js'])
     .pipe(concat('theme.js'))
     .pipe(gulp.dest('./js/'));
 });
