@@ -1,13 +1,17 @@
 'use strict';
 
+// Paths
+var basePaths = {
+	node: './node_modules',
+	dev: './src'
+}
+
 // requirements 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
-// Paths
-var basePaths = {
-	node: './node_modules'
-}
 
 // Run:
 // gulp sass
@@ -22,6 +26,20 @@ gulp.task('sass:watch', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-// gulp.task('hello', function() {
-//     console.log("Hello You :D");
-// });
+// Run: 
+// gulp scripts
+// Uglifies and concat all JS files into one
+gulp.task('scripts', function() {
+  gulp.src([
+    basePaths.dev + 'js/tether.js', // Must be loaded before BS4
+
+    // Start - All BS4 stuff
+    basePaths.dev + 'js/bootstrap4/bootstrap.js', 
+
+    // End - All BS4 stuff
+
+    basePaths.dev + 'js/skip-link-focus-fix.js'
+    ])
+    .pipe(concat('theme.js'))
+    .pipe(gulp.dest('./js/'));
+});

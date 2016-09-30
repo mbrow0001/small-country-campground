@@ -47,6 +47,8 @@ function new_theme_setup() {
 		'primary' => esc_html__( 'Primary', 'new-theme' ),
 	) );
 
+	register_nav_menu('navbar', __('Navbar', 'new-theme'));
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -138,3 +140,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* Load custom WordPress nav walker.
+*/
+require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
+
