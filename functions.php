@@ -6,6 +6,12 @@
  */
 require get_template_directory() . '/inc/setup.php';
 
+
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/cleanup.php';
+
 /**
  * Implement the Custom Header feature.
  */
