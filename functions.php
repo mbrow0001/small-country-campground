@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'new_theme_widgets_init' );
  */
 function new_theme_scripts() {
 	wp_enqueue_style( 'new-theme-style', get_template_directory_uri() . '/css/style.css' );
-
+	wp_enqueue_script('jquery'); 
 	wp_enqueue_script( 'new-theme-js', get_template_directory_uri() . '/js/theme.js', array(), '0.0.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

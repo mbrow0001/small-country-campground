@@ -23,7 +23,9 @@
     "url": "https://github.com/benwhit/wp-new-theme/issues"
   },
   "homepage": "https://github.com/benwhit/wp-new-theme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-watch": "^4.3.10"
+  },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.4",
     "gulp": "^3.9.1",
