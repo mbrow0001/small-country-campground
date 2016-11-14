@@ -1,1 +1,5 @@
 js/**.min.js
+node_modules/**
+bower_components/**
+build/js/tether.js 
+build/js/bootstrap4/*

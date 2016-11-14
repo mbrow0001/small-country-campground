@@ -1,36 +1,62 @@
 'use strict';
-
 /**
-* Configuration.
-*
-* Project Configuration for gulp tasks.
-*
-* Edit the variables as per your project requirements.
-*/
+ * Configuration. */
 var basePaths = {
-	node: './node_modules/',
-	dev: './build/'
+    node: './node_modules/',
+    dev: './build/'
 }
 
 /**
+ * Javascript Files.
+ * Add all the JS files you want to run gulp tasks.
+ */
+var jsFiles = [
+    // Build Scripts
+    basePaths.dev + 'js/tether.js', // load before BS4
+    basePaths.dev + 'js/bootstrap4/bootstrap.js',
+    basePaths.dev + 'js/parallax.min.js',
+    basePaths.dev + 'js/navigation.js',
+    basePaths.dev + 'js/skip-link-focus-fix.js',
+    basePaths.dev + 'js/parallax.js',
+    basePaths.dev + 'js/custom.js', // Custome Theme File
+    // NPM Modules
+    basePaths.node + 'masonry-layout/dist/masonry.pkgd.min.js',
+    basePaths.node + 'fullpage.js/dist/jquery.fullpage.min.js',
+    basePaths.node + 'scrollreveal/dist/scrollreveal.min.js',
+    basePaths.node + 'isotope-layout/dist/isotope.pkgd.min.js',
+    basePaths.node + 'owl.carousel/dist/owl.carousel.min.js'
+]
+
+
+/**
  * Load Plugins.
- *
  * Load gulp plugins and assing them semantic names.
  */
 var gulp = require('gulp');
-var concat = require('gulp-concat');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 var watch = require('gulp-watch');
 var cssnano = require('gulp-cssnano');
-//var uncss = require('gulp-uncss');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var rimraf = require('gulp-rimraf');
 var ignore = require('gulp-ignore');
 var sourcemaps = require('gulp-sourcemaps');
 var runSequence = require('run-sequence');
+var plumber = require('gulp-plumber');
+var jshint = require('gulp-jshint');
+var ftp = require('vinyl-ftp');
+var jscs = require('gulp-jscs');
+var gutil = require('gulp-util');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+
+var onError = function(err) {
+    console.log('An error occurred:', gutil.colors.magenta(err.message));
+    gutil.beep();
+    this.emit('end');
+};
+
 
 /**
  * Browser Sync.
@@ -38,10 +64,11 @@ var reload = browserSync.reload;
  * automatically reloads the page when files changed.
  */
 var browserSyncWatchFiles = [
+    './build/js/*.js',
     './css/*.min.css',
     './js/*.min.js',
-    './**/*.php',
-    './*.php'
+    './js/*.js',
+    './**/*.php'
 ];
 
 var browserSyncOptions = {
@@ -61,107 +88,138 @@ gulp.task('browser-sync', function() {
  */
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
-      .pipe(sass())
-      .pipe(gulp.dest('./css'))
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(sass({
+            sourceComments: 'map',
+            sourceMap: 'sass',
+            outputStyle: 'nested'
+        }))
+        .pipe(gulp.dest('./css'));
 });
+
+/**
+ * Task: gulp nanocss
+ *
+ * Minify CSS + SourceMaps
+ */
+gulp.task('cssnano', ['cleancss'], function() {
+    return gulp.src('./css/*.css')
+        .pipe(sourcemaps.init({
+            loadMaps: true
+        }))
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(cssnano())
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./css/'))
+        .pipe(reload({
+            stream: true
+        }));
+});
+
+gulp.task('cleancss', function() {
+    return gulp.src('./css/*.min.css', {
+            read: false
+        }) // much faster 
+        .pipe(ignore('style.css'))
+        .pipe(rimraf());
+});
+
+/**
+ * Task: Watch
+ *
+ *  Watches for changes
+ */
+gulp.task('watch', function() {
+    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./css/style.css', ['cssnano']);
+    gulp.watch('./build/js/*.js', ['scripts']);
+});
+gulp.task('watch-bs', ['browser-sync', 'watch'], function() {});
+
 
 /**
  * Task: gulp scripts
  * Uglifies and concat all JS files into one.
  */
-
 gulp.task('scripts', function() {
-  gulp.src([
+    gulp.src(jsFiles)
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish', {
+            verbose: false
+        }))
+        .pipe(jscs(''))
+        .pipe(concat('theme.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js/'))
 
-    basePaths.dev   + 'js/tether.js', // load before BS4
-    basePaths.dev   + 'js/bootstrap4/bootstrap.js',
-    basePaths.dev   + 'js/parallax.min.js',
-    basePaths.node  + 'masonry-layout/dist/masonry.pkgd.min.js',
-    basePaths.node  + 'fullpage.js/dist/jquery.fullpage.min.js',
-    basePaths.node  + 'scrollreveal/dist/scrollreveal.min.js',
-    basePaths.node  + 'isotope-layout/dist/isotope.pkgd.min.js',
-    basePaths.node  + 'lightbox2/dist/js/lightbox.min.js',
-    basePaths.node  + 'owl.carousel/dist/owl.carousel.min.js',
-    basePaths.dev   + 'js/navigation.js',
-    basePaths.dev   + 'js/skip-link-focus-fix.js',
-    './js/parallax.min.js',
-    './js/custom.js' // Custom Theme Script
-    ])
-    .pipe(concat('theme.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./js/'))
-    .pipe(reload({stream: true}));
+    gulp.src(jsFiles)
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(concat('theme.js'))
+        .pipe(gulp.dest('./js/'))
 });
-
-
-// Run: 
-// gulp nanocss
-// Minifies CSS files
-gulp.task('cssnano', ['cleancss'], function(){
-  return gulp.src('./css/*.css')
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano({discardComments: {removeAll: true}}))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./css/'))
-    .pipe(reload({stream: true}));
-}); 
-
-
-gulp.task('cleancss', function() {
-  return gulp.src('./css/*.min.css', { read: false }) // much faster 
-    .pipe(ignore('theme.css'))
-    .pipe(rimraf());
-});
-
 
 /**
- * Task: Watch
- * Uglifies and concat all JS files into one.
+ * Task: gulp build
+ * Builds necessary files from npm dependencies to use gulp tasks.
  */
-
-gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-  gulp.watch('./css/style.css', ['cssnano']);
-  // gulp.watch('/*.php', browserSync.reload);
-  // gulp.watch('/js/**/*.js', browserSync.reload);
-});
-
-
-
-/**
- * Task: Deaful task
- * Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser.
- */
-gulp.task('default', ['browser-sync', 'watch', 'sass', 'scripts'], function () { });
-
-// Run: 
-// gulp build 
-// Copy all needed dependency assets files from bower_component assets to themes /js, /scss and /fonts folder. Run this task after bower install or bower update
-
 gulp.task('build', function() {
     gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
-       .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
-
+        .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
     gulp.src(basePaths.node + 'bootstrap/scss/**/*.scss')
-       .pipe(gulp.dest(basePaths.dev + '/sass/bootstrap4'));
-
+        .pipe(gulp.dest(basePaths.dev + '/sass/bootstrap4'));
     gulp.src(basePaths.node + 'owl.carousel/src/scss/*.scss')
-       .pipe(gulp.dest(basePaths.dev + '/sass/owl-carousel'));
-
+        .pipe(gulp.dest(basePaths.dev + '/sass/owl-carousel'));
     gulp.src(basePaths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
         .pipe(gulp.dest('./fonts'));
-
     gulp.src(basePaths.node + 'font-awesome/scss/*.scss')
         .pipe(gulp.dest(basePaths.dev + '/sass/fontawesome'));
-
     gulp.src(basePaths.node + 'jquery/dist/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
-
     gulp.src(basePaths.node + 'tether/dist/js/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
-
     gulp.src(basePaths.node + 'tether/dist/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css'));
+});
+
+
+gulp.task('deploy', function() {
+
+    var conn = ftp.create({
+        host: 'cycat1.com',
+        user: 'protechstafford',
+        password: 'f7h45h9p967',
+        parallel: 10,
+        log: gutil.log
+    });
+
+    var globs = [
+        'page-templates/*.php',
+        'inc/*.php',
+        'css/*.css',
+        'js/*.js',
+        '*.php'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src(globs, {
+            base: '.',
+            buffer: false
+        })
+        .pipe(conn.newer('/www/wp-content/themes/ProTech')) // only upload newer files
+        .pipe(conn.dest('/www/wp-content/themes/ProTech'));
 
 });
