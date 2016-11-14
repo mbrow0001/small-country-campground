@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

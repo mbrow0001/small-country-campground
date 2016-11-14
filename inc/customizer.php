@@ -1,8 +1,8 @@
 <?php
 /**
- * new theme Theme Customizer
+ * cyberbility-starter Theme Customizer
  *
- * @package new theme
+ * @package cyberbility-starter
  */
 
 /**
@@ -21,7 +21,7 @@ add_action( 'customize_register', 'new_theme_customize_register' );
 function new_theme_theme_customize_register( $wp_customize ) {
 
     $wp_customize->add_section( 'new_theme_theme_slider_options', array(
-        'title'          => __( 'Slider Settings', 'new theme' )
+        'title'          => __( 'Slider Settings', 'cyberbility-starter' )
     ) );
 
     $wp_customize->add_setting( 'new_theme_theme_slider_count_setting', array(
@@ -30,7 +30,7 @@ function new_theme_theme_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'new_theme_theme_slider_count', array(
-        'label'      => __( 'Number of slides displaying at once', 'new theme' ),
+        'label'      => __( 'Number of slides displaying at once', 'cyberbility-starter' ),
         'section'    => 'new_theme_theme_slider_options',
         'type'       => 'text',
         'settings'   => 'new_theme_theme_slider_count_setting'
@@ -42,7 +42,7 @@ function new_theme_theme_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'new_theme_theme_slider_time', array(
-        'label'      => __( 'Slider Time (in ms)', 'new theme' ),
+        'label'      => __( 'Slider Time (in ms)', 'cyberbility-starter' ),
         'section'    => 'new_theme_theme_slider_options',
         'type'       => 'text',
         'settings'   => 'new_theme_theme_slider_time_setting'
@@ -54,7 +54,7 @@ function new_theme_theme_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'new_theme_theme_loop', array(
-        'label'      => __( 'Loop Slider Content', 'new theme' ),
+        'label'      => __( 'Loop Slider Content', 'cyberbility-starter' ),
         'section'    => 'new_theme_theme_slider_options',
         'type'     => 'radio',
         'choices'  => array(

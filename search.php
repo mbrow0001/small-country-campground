@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
                     <header class="page-header">
 
-                        <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'new_theme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+                        <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'cyberbility-starter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
                         
                     </header><!-- .page-header -->
 

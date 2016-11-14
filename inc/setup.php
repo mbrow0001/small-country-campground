@@ -1,10 +1,10 @@
 <?php
 /**
- * new theme functions and definitions.
+ * cyberbility-starter functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 if ( ! function_exists( 'new_theme_setup' ) ) :
@@ -32,10 +32,10 @@ function new_theme_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on new theme, use a find and replace
-	 * to change 'new-theme' to the name of your theme in all the template files.
+	 * If you're building a theme based on cyberbility-starter, use a find and replace
+	 * to change 'cyberbility-starter' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'new-theme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'cyberbility-starter', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -57,10 +57,10 @@ function new_theme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'new-theme' ),
+		'primary' => esc_html__( 'Primary', 'cyberbility-starter' ),
 	) );
 
-	register_nav_menu('navbar', __('Navbar', 'new-theme'));
+	register_nav_menu('navbar', __('Navbar', 'cyberbility-starter'));
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -82,5 +82,13 @@ function new_theme_setup() {
 }
 endif;
 add_action( 'after_setup_theme', 'new_theme_setup' );
+
+
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 ?>

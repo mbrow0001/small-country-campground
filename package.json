@@ -1,5 +1,5 @@
 {
-  "name": "new-theme",
+  "name": "cyberbility-theme",
   "version": "0.0.1",
   "description": "Wordpress Theme framework",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benwhit/wp-new-theme.git"
+    "url": "https://github.com/benwhit/cyberbility-theme.git"
   },
   "keywords": [
     "wordpress",
@@ -20,17 +20,33 @@
   "author": "Ben Whit",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/benwhit/wp-new-theme/issues"
+    "url": "https://github.com/benwhit/cyberbility-theme/issues"
   },
-  "homepage": "https://github.com/benwhit/wp-new-theme",
+  "homepage": "https://github.com/benwhit/cyberbility-theme",
   "dependencies": {
-    "gulp-watch": "^4.3.10"
-  },
-  "devDependencies": {
     "bootstrap": "^4.0.0-alpha.4",
+    "browser-sync": "^2.17.0",
+    "font-awesome": "^4.6.3",
+    "fullpage.js": "^2.8.7",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-ignore": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^4.3.10",
+    "isotope": "0.0.1-security",
+    "isotope-layout": "^3.0.1",
+    "lightbox2": "^2.8.2",
+    "masonry-layout": "^4.1.1",
+    "owl.carousel": "^2.1.4",
+    "run-sequence": "^1.2.2",
+    "scrollreveal": "^3.3.2",
+    "tether": "^1.3.7"
   }
 }

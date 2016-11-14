@@ -1,0 +1,50 @@
+
+/* ---- grid ---- */
+
+.masonry {
+  background: #EEE;
+  /* center */
+  margin: 0 auto;
+
+  /* clearfix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- grid-item ---- */
+
+  .grid-item {
+    width: 250px;
+    height: 200px;
+    float: left;
+    background: #ececec;
+    overflow: hidden;
+  }
+
+  .grid-item--height2 { height: 300px; }
+  .grid-item--height3 { height: 260px; }
+
+}
+
+.masonry--res {
+  /* fluid 5 columns */
+  .grid-sizer{
+    width: 20%;
+  }
+  .grid-item { 
+    width: 20%;
+    height: 250px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  /* 2 columns */
+  .grid-item--width2 { width: 40%; }
+}

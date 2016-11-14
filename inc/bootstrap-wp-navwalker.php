@@ -183,4 +183,3 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		}
 	}
 }
-

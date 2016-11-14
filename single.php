@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 get_header(); ?>

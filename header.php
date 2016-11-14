@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 ?><!DOCTYPE html>
@@ -21,6 +21,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+    <script src="https://use.typekit.net/clr6lrz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,7 +32,7 @@
 		<!-- ******************* The Navbar Area ******************* -->
 		<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
-			<a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'new-theme' ); ?></a>
+			<a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
 
         <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             

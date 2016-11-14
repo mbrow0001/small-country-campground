@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package new_theme
+ * @package cyberbility-starter
  */
 
 /**
