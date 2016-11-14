@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
   */
 
   //defaults 
-  window.sr = ScrollReveal({ 
+  window.sr = new ScrollReveal({ 
     origin: 'bottom',
     reset: true,
     duration: 400,
@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
     // use element for option
     columnWidth: '.grid-sizer',
     percentPosition: true
-  })
+  });
 
   /*
   **  Isotope 

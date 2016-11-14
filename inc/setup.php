@@ -80,6 +80,9 @@ function cyberbility_starter_setup() {
 		'default-image' => '',
 	) ) );
 }
+// Set up the Wordpress Theme logo feature.
+	add_theme_support('custom-logo');
+	
 endif;
 add_action( 'after_setup_theme', 'cyberbility_starter_setup' );
 

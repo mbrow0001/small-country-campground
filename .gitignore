@@ -10,7 +10,7 @@ desktop.ini
 
 css/*.min*
 
-js/*.min.js
+js/theme.min.js
 
 **/.sass-cache
 

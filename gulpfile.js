@@ -17,14 +17,15 @@ var jsFiles = [
     basePaths.dev + 'js/parallax.min.js',
     basePaths.dev + 'js/navigation.js',
     basePaths.dev + 'js/skip-link-focus-fix.js',
-    basePaths.dev + 'js/parallax.js',
-    basePaths.dev + 'js/custom.js', // Custome Theme File
     // NPM Modules
     basePaths.node + 'masonry-layout/dist/masonry.pkgd.min.js',
     basePaths.node + 'fullpage.js/dist/jquery.fullpage.min.js',
     basePaths.node + 'scrollreveal/dist/scrollreveal.min.js',
     basePaths.node + 'isotope-layout/dist/isotope.pkgd.min.js',
-    basePaths.node + 'owl.carousel/dist/owl.carousel.min.js'
+    basePaths.node + 'owl.carousel/dist/owl.carousel.min.js',
+    // Custome Theme Files
+    'js/parallax.min.js',
+    'js/custom.js'
 ]
 
 /**
