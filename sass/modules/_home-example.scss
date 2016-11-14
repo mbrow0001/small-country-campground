@@ -6,11 +6,12 @@
 			padding: 1.5rem 20vh;
 		}
 		a, .nav-link {
+			position: relative;
 			color: #242424;
 			font-weight: 400;
 		}
-		a { 
-			&:hover{ color: #000 !important;	}
+		a {
+			&:hover{ color: #000 !important; }
 			&:before {
 				background: #2a8da6;
 			    position: absolute;

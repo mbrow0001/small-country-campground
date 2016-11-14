@@ -1,7 +1,5 @@
 node_modules
 
-understrap.zip
-
 build
 
 dist
@@ -9,3 +7,5 @@ dist
 .phpintel
 
 desktop.ini
+
+css
