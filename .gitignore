@@ -9,3 +9,9 @@ dist
 desktop.ini
 
 css/*.min*
+
+js/*.min.js
+
+**/.sass-cache
+
+**/.sass-cache/*
