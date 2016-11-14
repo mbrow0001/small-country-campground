@@ -1,36 +1,29 @@
 <?php
 /**
- * Template Name: Home Page Example
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package cyberbility-starter
- */
-
+* Template Name: Home Page Example
+*
+* This is the template that displays all pages by default.
+* Please note that this is the WordPress construct of pages
+* and that other 'pages' on your WordPress site will use a
+* different template.
+*
+* @package cyberbility-starter
+*/
 get_header(); ?>
-
 <div class="wrapper" id="page-wrapper">
-
   <div  id="content" class="container-fluid">
-
     <div class="row">
-
       <div id="primary" class="col-md-12 content-area">
-
-       <main id="main" class="site-main" role="main">
-
-         <div class="row">
-           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <main id="main" class="site-main" role="main">
+        <div class="row">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">              
+              <div class="carousel-item active">
                 <div class="shadow"></div>
                 <img src="https://unsplash.it/2000/1200/?random" alt="First slide">
                 <div class="cap">
@@ -38,7 +31,7 @@ get_header(); ?>
                   <p class="animate fadeIn">Amet illum libero animi sunt inventore soluta! Reiciendis nobis ad harum, sunt, officiis odit excepturi eos non, laborum iure pariatur, fugiat.</p>
                 </div>
               </div>
-              <div class="carousel-item">              
+              <div class="carousel-item">
                 <div class="shadow"></div>
                 <img src="https://unsplash.it/2100/1200/?random" alt="Second slide">
                 <div class="cap">
@@ -46,7 +39,7 @@ get_header(); ?>
                   <p class="animate fadeIn"> sed voluptatum dolor a consectetur, consequuntur laboriosam dolore reiciendis, deserunt voluptatibus?</p>
                 </div>
               </div>
-              <div class="carousel-item">              
+              <div class="carousel-item">
                 <div class="shadow"></div>
                 <img src="https://unsplash.it/2202/1200/?random" alt="Third slide">
                 <div class="cap">
@@ -65,7 +58,6 @@ get_header(); ?>
             </a>
           </div>
         </div>
-
         <div class="clearfix"></div>
         <div class="spacer"></div>
         <div class="spacer"></div>
@@ -80,10 +72,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-
+        <div class="spacer"></div>
+        <div class="spacer"></div>
         <section class="row second" style="background-color: #EFEFEF">
           <div class="spacer"></div>
           <div class="spacer"></div>
@@ -110,7 +100,6 @@ get_header(); ?>
           <div class="spacer"></div>
           <div class="spacer"></div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
         
@@ -126,10 +115,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
-
         <section class="row">
           <div class="parallax-window" data-speed="0.8">
             <div class="parallax-slider text-md-center">
@@ -137,10 +124,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
-
         <section class="container thrid">
           <div class="row">
             <div class="col-md-5 baz">
@@ -153,10 +138,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
-
         <section class="container thrid">
           <div class="row">
             <div class="col-md-6 bar">
@@ -169,10 +152,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
-
         <section class="container thrid">
           <div class="row">
             <div class="col-md-5 baz">
@@ -185,10 +166,8 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
-
         <section class="row">
           <div class="parallax-window" data-speed="0.4">
             <div class="parallax-slider text-md-center">
@@ -198,71 +177,73 @@ get_header(); ?>
         </section>
 
         <div class="clearfix"></div>
-
         <div class="spacer"></div>
         <div class="spacer"></div>
 
-      <section class="folio container">
-        <h2 class="title text-sm-center"><em>Our Client</em> Portfolio</h2>
-        <div class="button-group filters-button-group">
-          <button class="button is-checked" data-filter="*">show all</button>
-          <button class="button" data-filter=".bill">Bill Murray</button>
-          <button class="button" data-filter=".cage">Nicholas Cage</button>
-          <button class="button" data-filter=".kitten">Kittens</button>
-          <button class="button" data-filter=".unsplash">Unsplash</button>
-        </div>
+        <section class="container">
+          <div class="filter-wrap">
+            <h2 class="title text-sm-center"><em>Our Client</em> Portfolio</h2>
+            <!-- Filter Menu Bar -->
+            <div class="button-group filters-button-group">
+              <button class="button is-checked" data-filter="*">show all</button>
+              <button class="button" data-filter=".bill">Bill Murray</button>
+              <button class="button" data-filter=".cage">Nicholas Cage</button>
+              <button class="button" data-filter=".kitten">Kittens</button>
+              <button class="button" data-filter=".unsplash">Unsplash</button>
+            </div>
 
-        <div class="protek-filter">
-          <!-- width of .grid-sizer used for columnWidth -->
-          <div class="grid-sizer"></div>
-          <div class="grid-item grid-item--width2 bill" style="background-image:url(http://fillmurray.com/401/300)">
-            <img src="" alt="">
+            <div class="filter">
+              <!-- width of .grid-sizer used for columnWidth -->
+              <div class="grid-sizer"></div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/401/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item cage" style="background-image:url(http://www.placecage.com/300/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item  cage" style="background-image:url(http://www.placecage.com/501/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item  bill" style="background-image:url(http://fillmurray.com/301/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item cage" style="background-image:url(http://www.placecage.com/502/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item kitten" style="background-image:url(http://placekitten.com/300/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/302/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/303/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item kitten" style="background-image:url(http://placekitten.com/501/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/304/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item  bill" style="background-image:url(http://fillmurray.com/301/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item cage" style="background-image:url(http://www.placecage.com/502/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item kitten" style="background-image:url(http://placekitten.com/310/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/320/300)">
+                <img src="" alt="">
+              </div>
+              <div class="grid-item bill" style="background-image:url(http://fillmurray.com/315/300)">
+                <img src="" alt="">
+              </div>
+            </div>
           </div>
-          <div class="grid-item grid-item--width2 cage" style="background-image:url(http://www.placecage.com/300/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item  cage" style="background-image:url(http://www.placecage.com/501/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item grid-item--width2  bill" style="background-image:url(http://fillmurray.com/301/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item cage" style="background-image:url(http://www.placecage.com/502/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item alkali kitten" style="background-image:url(http://placekitten.com/300/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item alkali bill" style="background-image:url(http://fillmurray.com/302/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item grid-item--width2 bill" style="background-image:url(http://fillmurray.com/303/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item grid-item--width2 alkaline-earth kitten" style="background-image:url(http://placekitten.com/501/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item bill" style="background-image:url(http://fillmurray.com/304/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item grid-item--width2  bill" style="background-image:url(http://fillmurray.com/301/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item cage" style="background-image:url(http://www.placecage.com/502/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item alkali kitten" style="background-image:url(http://placekitten.com/310/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item alkali bill" style="background-image:url(http://fillmurray.com/320/300)">
-            <img src="" alt="">
-          </div>
-          <div class="grid-item grid-item--width2 bill" style="background-image:url(http://fillmurray.com/315/300)">
-            <img src="" alt="">
-          </div>
-        </div>        
-      </section>
-
+        </section>
+        
         <div class="clearfix"></div>
         <div class="spacer"></div>
         <div class="spacer"></div>
@@ -274,19 +255,11 @@ get_header(); ?>
             </div>
           </div>
         </section>
-
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-
-
-      </main><!-- #main -->
-
-    </div><!-- #primary -->
-
-  </div><!-- .row -->
-
-</div><!-- Container end -->
-
-</div><!-- Wrapper end -->
-
-<?php get_footer(); ?>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        </main><!-- #main -->
+        </div><!-- #primary -->
+        </div><!-- .row -->
+        </div><!-- Container end -->
+        </div><!-- Wrapper end -->
+        <?php get_footer(); ?>

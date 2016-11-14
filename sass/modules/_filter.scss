@@ -1,8 +1,14 @@
-.home {
-
+.filter-wrap {
+  .title {
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    em {
+      font-weight: 300;
+    }   
+  }
 
   /* ---- button ---- */
-
   .button {
     display: inline-block;
     padding: 10px 18px;
@@ -40,21 +46,25 @@
 
   /* ---- button-group ---- */
 
-  .button-group:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
+  .button-group {
+    width: 100%;
+    margin-bottom:40px;
+    text-align: center;
 
-  .button-group .button {
-    float: left;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 1px;
-  }
+    button {
+      background: none;
+      font-weight: bold;
+      border: none;
+      box-shadow: none;
+      padding-bottom: 10px;
+      outline: none;
 
-  .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-  .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+      &.is-checked {
+        border-bottom: 2px solid #999;
+        border-width: 90%;
+      }
+    }
+  }
 
   /* ---- isotope ---- */
 
@@ -66,7 +76,8 @@
   }
 
   .filter {
-    border: 1px solid #333;
+    border: none;
+    min-height: 600px;
 
     /* ---- .grid-item ---- */
 
@@ -86,7 +97,6 @@
       background-size: cover;
       background-position: center;
     }
-
-    .grid-item--height2 { height: 300px; }
   }
+  
 }
