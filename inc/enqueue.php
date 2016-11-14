@@ -3,7 +3,7 @@
 /**
  * Enqueue scripts and styles.
  */
-function new_theme_scripts() {
+function cyberbility_starter_scripts() {
 	wp_enqueue_style( 'cyberbility-starter-style', get_template_directory_uri() . '/css/style.min.css', array(), '0.0.1');
 	wp_enqueue_script('jquery'); 
 	wp_enqueue_script( 'cyberbility-starter-js', get_template_directory_uri() . '/js/theme.min.js', array(), '0.0.1', true );
@@ -12,4 +12,4 @@ function new_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'new_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'cyberbility_starter_scripts' );

@@ -27,7 +27,6 @@ var jsFiles = [
     basePaths.node + 'owl.carousel/dist/owl.carousel.min.js'
 ]
 
-
 /**
  * Load Plugins.
  * Load gulp plugins and assing them semantic names.
@@ -57,7 +56,6 @@ var onError = function(err) {
     this.emit('end');
 };
 
-
 /**
  * Browser Sync.
  *
@@ -79,7 +77,6 @@ var browserSyncOptions = {
 gulp.task('browser-sync', function() {
     browserSync.init(browserSyncWatchFiles, browserSyncOptions);
 });
-
 
 /**
  * Task: gulp sass
@@ -175,20 +172,28 @@ gulp.task('scripts', function() {
  * Builds necessary files from npm dependencies to use gulp tasks.
  */
 gulp.task('build', function() {
+
     gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
+
     gulp.src(basePaths.node + 'bootstrap/scss/**/*.scss')
         .pipe(gulp.dest(basePaths.dev + '/sass/bootstrap4'));
+
     gulp.src(basePaths.node + 'owl.carousel/src/scss/*.scss')
         .pipe(gulp.dest(basePaths.dev + '/sass/owl-carousel'));
+
     gulp.src(basePaths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
         .pipe(gulp.dest('./fonts'));
+
     gulp.src(basePaths.node + 'font-awesome/scss/*.scss')
         .pipe(gulp.dest(basePaths.dev + '/sass/fontawesome'));
+
     gulp.src(basePaths.node + 'jquery/dist/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
+
     gulp.src(basePaths.node + 'tether/dist/js/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
+
     gulp.src(basePaths.node + 'tether/dist/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css'));
 });

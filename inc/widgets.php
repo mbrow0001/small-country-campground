@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function new_theme_widgets_init() {
+function cyberbility_starter_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'cyberbility-starter' ),
 		'id'            => 'sidebar-1',
@@ -44,5 +44,5 @@ function new_theme_widgets_init() {
         'after_title'   => '',
     ) );
 }
-add_action( 'widgets_init', 'new_theme_widgets_init' );
+add_action( 'widgets_init', 'cyberbility_starter_widgets_init' );
 ?>

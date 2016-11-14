@@ -7,7 +7,7 @@
  * @package cyberbility-starter
  */
 
-if ( ! function_exists( 'new_theme_setup' ) ) :
+if ( ! function_exists( 'cyberbility_starter_setup' ) ) :
 	
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -16,10 +16,10 @@ if ( ! function_exists( 'new_theme_setup' ) ) :
  *
  * @global int $content_width
  */
-function new_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'new_theme_content_width', 640 );
+function cyberbility_starter_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'cyberbility_starter_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'new_theme_content_width', 0 );
+add_action( 'after_setup_theme', 'cyberbility_starter_content_width', 0 );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -28,7 +28,7 @@ add_action( 'after_setup_theme', 'new_theme_content_width', 0 );
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function new_theme_setup() {
+function cyberbility_starter_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -75,13 +75,13 @@ function new_theme_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'new_theme_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'cyberbility_starter_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'new_theme_setup' );
+add_action( 'after_setup_theme', 'cyberbility_starter_setup' );
 
 
 // REMOVE WP EMOJI
