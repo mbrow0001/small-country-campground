@@ -8,4 +8,4 @@ dist
 
 desktop.ini
 
-css
+css/*.min*

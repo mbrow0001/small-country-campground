@@ -8102,6 +8102,11 @@ body:after {
 /*--------------------------------------------------------------
 # Theme - Add your styles in theme/theme.scss
 --------------------------------------------------------------*/
+/* 
+*	All your CSS & SASS can go here!
+*
+*	Use the sass/themes folder as your personal sass directory!
+*/
 .spacer {
   height: 40px; }
 
