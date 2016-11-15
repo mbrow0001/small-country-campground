@@ -85,8 +85,8 @@ gulp.task('browser-sync', function() {
  */
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
-        .pipe(sourcemaps.init({ loadMaps: true }))
-        .pipe(relativeSourcemapsSource({dest: 'dist'}))
+        .pipe(sourcemaps.init())
+        .pipe(relativeSourcemapsSource({dest: './css'}))
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass())
         .pipe(sourcemaps.write('./'))
