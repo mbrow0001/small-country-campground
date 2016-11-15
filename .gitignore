@@ -8,7 +8,9 @@ dist
 
 desktop.ini
 
-css/*.min*
+css/*.map
+
+css/*.min.map
 
 js/theme.min.js
 

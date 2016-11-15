@@ -74,7 +74,6 @@ jQuery(document).ready(function($) {
     });
   });
 
-
   /*
   **  Owl Carousel
   */

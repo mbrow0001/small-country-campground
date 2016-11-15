@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/benwhit/cyberbility-theme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.4",
+    "bootstrap": "^4.0.0-alpha.5",
     "browser-sync": "^2.17.0",
     "font-awesome": "^4.6.3",
     "fullpage.js": "^2.8.7",
@@ -53,6 +53,7 @@
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.2",
     "gulp-plumber": "^1.1.0",
+    "gulp-relative-sourcemaps-source": "^0.1.4",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "vinyl-ftp": "^0.5.0"

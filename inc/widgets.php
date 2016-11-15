@@ -16,24 +16,6 @@ function cyberbility_starter_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
-    register_sidebar( array(
-        'name'          => __( 'Hero Slider', 'cyberbility-starter' ),
-        'id'            => 'hero',
-        'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
-        'before_widget' => '<div class="item">',
-        'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
-    register_sidebar( array(
-        'name'          => __( 'Hero Static', 'cyberbility-starter' ),
-        'id'            => 'statichero',
-        'description'   => 'Static Hero widget. no slider functionallity',
-        'before_widget' => '',
-        'after_widget'  => '',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
         register_sidebar( array(
         'name'          => __( 'Footer Full', 'cyberbility-starter' ),
         'id'            => 'footerfull',

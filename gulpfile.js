@@ -42,6 +42,7 @@ var uglify = require('gulp-uglify');
 var rimraf = require('gulp-rimraf');
 var ignore = require('gulp-ignore');
 var sourcemaps = require('gulp-sourcemaps');
+var relativeSourcemapsSource = require('gulp-relative-sourcemaps-source');
 var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
 var jshint = require('gulp-jshint');
@@ -59,7 +60,6 @@ var onError = function(err) {
 
 /**
  * Browser Sync.
- *
  * automatically reloads the page when files changed.
  */
 var browserSyncWatchFiles = [
@@ -81,44 +81,32 @@ gulp.task('browser-sync', function() {
 
 /**
  * Task: gulp sass
- *
  * Compiles SCSS files in CSS.
  */
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
-        .pipe(plumber({
-            errorHandler: onError
-        }))
-        .pipe(sass({
-            sourceComments: 'map',
-            sourceMap: 'sass',
-            outputStyle: 'nested'
-        }))
-        .pipe(gulp.dest('./css'));
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        .pipe(relativeSourcemapsSource({dest: 'dist'}))
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(sass())
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./css'))
+        .pipe(reload({ stream: true }));;
 });
 
 /**
- * Task: gulp nanocss
- *
+ * Task: gulp cssnano
  * Minify CSS + SourceMaps
  */
 gulp.task('cssnano', ['cleancss'], function() {
     return gulp.src('./css/*.css')
-        .pipe(sourcemaps.init({
-            loadMaps: true
-        }))
-        .pipe(plumber({
-            errorHandler: onError
-        }))
-        .pipe(rename({
-            suffix: '.min'
-        }))
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(cssnano())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./css/'))
-        .pipe(reload({
-            stream: true
-        }));
+        .pipe(reload({ stream: true }));
 });
 
 gulp.task('cleancss', function() {
@@ -131,15 +119,21 @@ gulp.task('cleancss', function() {
 
 /**
  * Task: Watch
- *
  *  Watches for changes
  */
-gulp.task('watch', function() {
+gulp.task('watch-prod', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./css/style.css', ['cssnano']);
     gulp.watch('./build/js/*.js', ['scripts']);
 });
-gulp.task('watch-bs', ['browser-sync', 'watch'], function() {});
+
+gulp.task('watch-dev', function() {
+    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./css/style.css');
+    gulp.watch('./build/js/*.js', ['scripts']);
+});
+
+gulp.task('watch', ['browser-sync', 'watch-dev'], function() {});
 
 
 /**
@@ -148,22 +142,16 @@ gulp.task('watch-bs', ['browser-sync', 'watch'], function() {});
  */
 gulp.task('scripts', function() {
     gulp.src(jsFiles)
-        .pipe(plumber({
-            errorHandler: onError
-        }))
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish', {
-            verbose: false
-        }))
+        .pipe(jshint.reporter('jshint-stylish', { verbose: false }))
         .pipe(jscs(''))
         .pipe(concat('theme.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./js/'))
 
     gulp.src(jsFiles)
-        .pipe(plumber({
-            errorHandler: onError
-        }))
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(concat('theme.js'))
         .pipe(gulp.dest('./js/'))
 });

@@ -7431,22 +7431,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 #wrapper-hero {
   padding: 0px !important; }
 
@@ -7469,14 +7453,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: inherit; }
 
 .alignright {
+  display: inline;
   float: right;
+  margin-left: 1.5em;
   padding-left: 10px; }
 
 .alignleft {
+  display: inline;
   float: left;
+  margin-right: 1.5em;
   padding-right: 10px; }
 
 .aligncenter {
+  clear: both;
+  display: block;
   margin: 0px auto; }
 
 .entry-footer span {
@@ -7494,84 +7484,6 @@ a.skip-link {
 
 .jumbotron {
   margin-bottom: 0px; }
-
-.menu-item {
-  float: left;
-  width: auto;
-  display: inline; }
-
-.navbar-toggle {
-  position: relative;
-  float: right;
-  margin-right: 1rem;
-  padding: 9px 10px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent; }
-  .navbar-toggle:focus {
-    outline: 0; }
-  .navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px; }
-  .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 4px; }
-
-.navbar .collapsing, .navbar .collapse.in {
-  width: 100%;
-  float: left; }
-
-.navbar-dark .navbar-toggle {
-  border: 1px solid #fff; }
-
-.navbar-dark .icon-bar {
-  border-bottom: 1px solid #fff; }
-
-.navbar-dark .dropdown-menu {
-  background-color: #373a3c; }
-
-.navbar #main-menu {
-  float: left; }
-
-.navbar-nav .nav-item {
-  float: left; }
-
-.navbar-nav .nav-link {
-  display: block;
-  padding-top: .425rem;
-  padding-bottom: .425rem; }
-  .navbar-nav .nav-link + .nav-link {
-    margin-left: 0rem; }
-
-.navbar-nav .nav-item + .nav-item {
-  margin-left: 0rem; }
-
-.nav-link {
-  margin-left: .425rem;
-  margin-right: .425rem; }
-
-.dropdown-menu .dropdown-menu {
-  position: relative;
-  display: block;
-  border: none;
-  box-shadow: none;
-  margin-left: 10px;
-  width: 140px; }
-  .dropdown-menu .dropdown-menu li {
-    list-style: square;
-    padding-left: 0px; }
-
-.dropdown-menu .menu-item {
-  width: 100%; }
-  .dropdown-menu .menu-item a:hover {
-    background-color: #0275d8; }
-
-#content header {
-  margin: 20px 0; }
-
-.wrapper-navbar nav {
-  background: #0275d8 !important; }
 
 /* Main content */
 #content article {
@@ -8007,20 +7919,20 @@ body:after {
 .parallax-slider img {
   width: 100%; }
 
-.home {
+.page-template-home-page {
   /*
 	***	Welcome Section
 	*/ }
-  .home .wrapper-navbar nav {
+  .page-template-home-page .wrapper-navbar nav {
     background: #FFF !important;
-    padding: 1.5rem 20vh; }
-  .home .wrapper-navbar a, .home .wrapper-navbar .nav-link {
+    padding: 1.5rem 0; }
+  .page-template-home-page .wrapper-navbar a, .page-template-home-page .wrapper-navbar .nav-link {
     position: relative;
     color: #242424;
     font-weight: 400; }
-  .home .wrapper-navbar a:hover {
+  .page-template-home-page .wrapper-navbar a:hover {
     color: #000 !important; }
-  .home .wrapper-navbar a:before {
+  .page-template-home-page .wrapper-navbar a:before {
     background: #2a8da6;
     position: absolute;
     display: block;
@@ -8032,13 +7944,13 @@ body:after {
     -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .home .wrapper-navbar a:hover:before {
+  .page-template-home-page .wrapper-navbar a:hover:before {
     width: 100%;
     left: 0;
     -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .home .carousel-inner .shadow {
+  .page-template-home-page .carousel-inner .shadow {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -8046,11 +7958,11 @@ body:after {
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 0; }
-  .home .carousel-inner .carousel-item {
+  .page-template-home-page .carousel-inner .carousel-item {
     height: 70vh;
     overflow: hidden;
     clear: both; }
-    .home .carousel-inner .carousel-item .cap {
+    .page-template-home-page .carousel-inner .carousel-item .cap {
       position: absolute;
       z-index: 999;
       top: 30%;
@@ -8059,11 +7971,11 @@ body:after {
       margin: auto;
       max-width: 60%;
       text-align: center; }
-      .home .carousel-inner .carousel-item .cap h1 {
+      .page-template-home-page .carousel-inner .carousel-item .cap h1 {
         font-size: 55px;
         font-weight: 600;
         color: #FFF; }
-      .home .carousel-inner .carousel-item .cap p {
+      .page-template-home-page .carousel-inner .carousel-item .cap p {
         color: #FFF;
         padding-top: 40px;
         max-width: 60%;
@@ -8071,32 +7983,32 @@ body:after {
         margin: auto;
         -webkit-transition: opacity 2s;
         transition: opacity 2s; }
-  .home .welcome .big {
+  .page-template-home-page .welcome .big {
     color: #000;
     font-size: 55px;
     font-weight: 800; }
-    .home .welcome .big em {
+    .page-template-home-page .welcome .big em {
       text-transform: capitalize;
       font-weight: 300; }
-  .home .welcome .wrap {
+  .page-template-home-page .welcome .wrap {
     padding-left: 20px; }
-    .home .welcome .wrap h5 {
+    .page-template-home-page .welcome .wrap h5 {
       font-weight: 700;
       padding: 20px 0; }
-      .home .welcome .wrap h5 small {
+      .page-template-home-page .welcome .wrap h5 small {
         font-weight: bold; }
-    .home .welcome .wrap p {
+    .page-template-home-page .welcome .wrap p {
       font-size: 14px;
       color: #9f9f9f;
       line-height: 22px; }
-  .home .second p {
+  .page-template-home-page .second p {
     margin-top: 25px;
     font-size: 14px; }
-  .home .thrid .title {
+  .page-template-home-page .thrid .title {
     font-size: 45px;
     margin-bottom: 35px;
     font-weight: bold; }
-    .home .thrid .title em {
+    .page-template-home-page .thrid .title em {
       font-weight: 300; }
 
 /*--------------------------------------------------------------
@@ -8104,7 +8016,6 @@ body:after {
 --------------------------------------------------------------*/
 /* 
 *	All your CSS & SASS can go here!
-*
 *	Use the sass/themes folder as your personal sass directory!
 */
 .spacer {
@@ -8113,6 +8024,9 @@ body:after {
 .wrapper-navbar {
   position: relative;
   z-index: 999; }
+
+.header-img img {
+  width: 100%; }
 
 .button.outline,
 .button.outward {
@@ -8210,3 +8124,5 @@ body:after {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
+
+/*# sourceMappingURL=style.css.map */

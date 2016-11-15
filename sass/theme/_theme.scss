@@ -1,6 +1,5 @@
 /* 
 *	All your CSS & SASS can go here!
-*
 *	Use the sass/themes folder as your personal sass directory!
 */
 
@@ -12,3 +11,11 @@
 	position: relative;
 	z-index: 999;
 }
+
+.header-img {
+	img { 
+		width: 100%;
+	}
+}
+
+

@@ -8,11 +8,12 @@
  */
 ?>
 
-<?php dynamic_sidebar('footerfull'); ?>
 
 <div class="wrapper" id="wrapper-footer">
     
     <div class="container">
+
+        <?php dynamic_sidebar('footerfull'); ?>
 
         <div class="row">
 

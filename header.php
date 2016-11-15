@@ -25,15 +25,15 @@
         </head>
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
-            
-                <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+
+                <div class="wrapper-fluid wrapper-navbar">
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
-                    <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+                    <nav class="navbar navbar-light navbar-full bg-faded container" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-                                <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">
+                                <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".mobile">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
@@ -50,7 +50,7 @@
                             <?php wp_nav_menu(
                                 array(
                                     'theme_location' => 'primary',
-                                    'container_class' => 'collapse navbar-toggleable-xs exCollapsingNavbar',
+                                    'container_class' => 'collapse navbar-toggleable-xs mobile',
                                     'menu_class' => 'nav navbar-nav',
                                     'fallback_cb' => '',
                                     'menu_id' => 'main-menu',
