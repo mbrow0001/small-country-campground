@@ -191,9 +191,9 @@ gulp.task('build', function() {
 gulp.task('deploy', function() {
 
     var conn = ftp.create({
-        host: 'cycat1.com',
-        user: 'protechstafford',
-        password: 'f7h45h9p967',
+        host: '',
+        user: '',
+        password: '',
         parallel: 10,
         log: gutil.log
     });
@@ -213,7 +213,7 @@ gulp.task('deploy', function() {
             base: '.',
             buffer: false
         })
-        .pipe(conn.newer('/www/wp-content/themes/ProTech')) // only upload newer files
-        .pipe(conn.dest('/www/wp-content/themes/ProTech'));
+        .pipe(conn.newer('/www/wp-content/themes/theme-name')) // only upload newer files
+        .pipe(conn.dest('/www/wp-content/themes/theme-name'));
 
 });
