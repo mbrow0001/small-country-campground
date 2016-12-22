@@ -17,6 +17,7 @@ get_header(); ?>
   <div  id="content" class="container-fluid">
 
   	<h1>This is template came from a Branch</h1>
+  	<p>Moving Master one commit forward before merging a spearate branch for test purposes</p>
 
     <div class="row">
 
