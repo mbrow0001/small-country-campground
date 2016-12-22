@@ -59,5 +59,7 @@
                                     ); ?>
                         </div> <!-- .container -->
 
+                        <h1>Testing DeployHQ automatic deployments</h1>
+
                     </nav><!-- .site-navigation -->                            
                 </div><!-- .wrapper-navbar end -->
