@@ -17,6 +17,7 @@ get_header(); ?>
   <div  id="content" class="container-fluid">
 
   	<h1>This is template came from a Branch</h1>
+    <p>Making this change from gulp-improvements</p>
 
     <div class="row">
 
