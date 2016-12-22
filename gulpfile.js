@@ -1,4 +1,8 @@
 'use strict';
+
+/* Comment for testing purposes */
+
+
 /**
  * Configuration. */
 var basePaths = {
