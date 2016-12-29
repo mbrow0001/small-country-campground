@@ -1,0 +1,50 @@
+
+// Buttons
+.btn-ghost {
+    position: relative;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 12px 20px;
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 3px;
+    -moz-transition: 150ms;
+    -o-transition: 150ms;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+    text-decoration: none;
+}
+.btn-ghost:hover {
+    color: white;
+    background-color: #111;
+}
+.btn-ghost:after {
+    //background: url(/wp-content/uploads/2016/12/arrow-right-black.png) no-repeat center center;
+    background-size: contain;
+    font-family: fontawesome;
+    width: 21px;
+    height: 17px;
+    display: block;
+    content: "\f061";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    opacity: 0;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.btn-ghost:hover:after {
+    color: #FFF;
+    -moz-transform: translate3d(10px,0,0);
+    -webkit-transform: translate3d(10px,0,0);
+    transform: translate3d(10px,0,0);
+    opacity: 1;
+}

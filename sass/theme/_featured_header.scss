@@ -1,0 +1,29 @@
+/* Featured Header Template Styles */
+
+.header-img {
+	position: relative;
+	height: 275px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+
+	.shadow {
+		position: absolute;
+		background: rgba(0,0,0,0.2);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+
+	.title {
+		position: absolute;
+		width: 100%;
+		top: 35%;
+		text-align: center;
+		font: bold 70px/70px $font-two; 
+		color: #FFF;
+		z-index: 3;
+	}
+}

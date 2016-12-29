@@ -1,0 +1,41 @@
+.carousel-inner{
+	.shadow {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.7);
+		z-index: 0;
+	}
+	.carousel-item {
+		height: 70vh;
+		overflow: hidden;
+		clear: both;
+		.cap {
+			position: absolute;
+			z-index: 999;
+			top: 30%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			max-width: 60%;
+			text-align: center;
+
+			h1 {
+				font-size: 55px;
+				font-weight:600;
+				color: #FFF;
+			}
+			p {
+				color: #FFF;
+				padding-top: 40px;
+				max-width: 60%;
+				font-size: 18px;
+				margin: auto;
+			    -webkit-transition: opacity 2s;
+			    transition: opacity 2s;
+			}
+		}
+	}
+}

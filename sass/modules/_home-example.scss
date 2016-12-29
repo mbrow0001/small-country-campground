@@ -1,0 +1,86 @@
+.page-template-home-page {
+	
+	.wrapper-navbar {
+		nav {
+			background: #FFF !important;
+			padding: 1.5rem 0;
+		}
+		a, .nav-link {
+			position: relative;
+			color: #242424;
+			font-weight: 400;
+		}
+		a {
+			&:hover{ color: #000 !important; }
+			&:before {
+				background: #2a8da6;
+			    position: absolute;
+			    display: block;
+			    height: 1px;
+			    right: 0;
+			    width: 0%;
+			    bottom: 3px;
+			    content: "";
+			    -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			    -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			    transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+			&:hover:before {
+	          width: 100%;
+	          left: 0;
+	          -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+	          -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+	          transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+			}
+		}
+	}
+	
+	/*
+	***	Welcome Section
+	*/
+	.welcome {
+		.big {
+			color: #000;
+			font-size: 55px;
+			font-weight: 800;
+			em {
+			text-transform: capitalize;
+				font-weight: 300;
+			}
+		}
+		.wrap {
+			padding-left: 20px;
+			h5 {
+				font-weight: 700;
+				padding: 20px 0;
+				small {
+					font-weight: bold;
+				}
+			}
+			p {
+				font-size: 14px;
+				color: #9f9f9f;
+				line-height: 22px;
+			}
+		}
+	}
+
+	.second {
+		p {
+			margin-top: 25px;
+			font-size: 14px;
+		}
+	}
+
+	.thrid {
+		.title {
+			font-size: 45px;
+			margin-bottom: 35px;
+			font-weight: bold;
+			em {
+				font-weight: 300;
+			}
+		}
+	}
+
+}

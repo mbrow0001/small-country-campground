@@ -1,0 +1,43 @@
+/*!
+Theme Name: cyberbility-starter
+Theme URI: http://underscores.me/
+Author: Ben Whit
+Author URI: http://benwhit.co
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cyberbility-starter
+Tags:
+*/
+/*--------------------------------------------------------------
+# Setup - Required
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Assets - Add assets
+--------------------------------------------------------------*/
+@import "assets/bootstrap4";
+@import "assets/font-awesome";
+@import "assets/owl-carousel";
+@import "assets/wordpress";
+
+/*--------------------------------------------------------------
+# Modules - Add modules
+--------------------------------------------------------------*/
+@import "modules/masonry";
+@import "modules/filter";
+@import "modules/lightbox";
+@import "modules/parallax";
+
+/*--------------------------------------------------------------
+# Theme - Add your styles in theme/theme.scss
+--------------------------------------------------------------*/
+@import "theme/theme_variables";
+@import "theme/theme";
+
+@import "theme/buttons";
+@import "theme/animate";
+@import "theme/header";
+@import "theme/slider";
+@import "theme/featured_header";

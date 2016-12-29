@@ -1,0 +1,68 @@
+/* CSS Stylesheet */
+
+
+.service-boxes {
+	text-align: center;
+}
+
+.service-boxes .service-box {
+	display: inline-block;
+	text-align: center;
+	border:  1px solid rgb(95, 98, 115);
+
+	padding: 40px 0;
+}
+
+.service-boxes .service-box .service-icon {
+	padding: 0 70px;
+}
+.service-boxes .service-box .service-icon a {
+	text-decoration: none;
+}
+
+.service-boxes .service-box .service-icon i {
+	display: inline-block;
+	font-size: 45px;
+	line-height: 60px;
+	color: rgb(95, 98, 115);
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.service-boxes .service-box .service-icon h4 {
+
+	color: rgb(95, 98, 115);
+	font-size: 23px;
+	padding: 25px 0 5px;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.service-boxes .service-box .service-icon p {
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.service-boxes .service-box .service-icon:hover i {
+	transition: all 0.5s ease;
+	color:#FFFFFF;
+	font-size: 54px;
+	line-height: 60px;
+	-webkit-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+
+}
+.service-boxes .service-box .service-icon:hover h4 {
+	transition: color 0.5s ease;
+	color: #FFFFFF;
+}
+.service-boxes .service-box:hover{
+	transition: background-color 0.5s ease;
+	background-color:rgb(95, 98, 115);
+}
