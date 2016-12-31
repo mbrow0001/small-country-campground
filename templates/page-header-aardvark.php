@@ -9,8 +9,12 @@
  *
  * @package cyberbility-starter
  */
-
-get_template_part('admin/headers/header', 'aardvark'); ?>
+$header = get_theme_mod( 'header_layout_choice', 'default');
+if ( $header !== 'default') {
+	get_template_part('templates/headers/header', $header);
+} else {
+	get_header();
+} ?>
 
 <div class="wrapper" id="page-wrapper">
 
