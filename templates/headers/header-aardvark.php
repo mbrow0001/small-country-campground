@@ -26,17 +26,21 @@
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
 
+
+
             <!-- Your site title as branding in the menu -->
-            <?php if (!has_custom_logo()) { ?>
-            <h1 class="text-xs-center">
-                <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
+            <?php if ( !get_header_image() ) { ?>
+                <h1 class="text-xs-center">
+                    <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <?php bloginfo( 'name' ); ?>
+                    </a>
+                </h1>
+            <?php } else { ?>                       
+                <?php if ( get_header_image() ) : ?>
+                <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
                 </a>
-            </h1>
-            <?php } else { ?>
-                <div class="text-center">
-                    <?php the_custom_logo(); ?><!-- end custom logo -->
-                </div>
+                <?php endif; // End header image check. ?>
             <?php } ?>
 
                 <div class="wrapper-fluid wrapper-navbar">
