@@ -26,7 +26,7 @@
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
 
-            <h1>Aardvark</h1>
+            <h1>Dingo</h1>
 
                 <div class="wrapper-fluid wrapper-navbar">
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
