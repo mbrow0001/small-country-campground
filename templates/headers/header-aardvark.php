@@ -20,39 +20,44 @@
             <link rel="profile" href="http://gmpg.org/xfn/11">
             <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
             <?php wp_head(); ?>
-            <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
             <style>*{font: 700 1.2rem 'Amatic SC', cursive;}</style>
         </head>
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
 
-            <h1>Aardvark</h1>
+            <!-- Your site title as branding in the menu -->
+            <?php if (!has_custom_logo()) { ?>
+            <h1 class="text-xs-center">
+                <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a>
+            </h1>
+            <?php } else { ?>
+                <div class="text-center">
+                    <?php the_custom_logo(); ?><!-- end custom logo -->
+                </div>
+            <?php } ?>
 
                 <div class="wrapper-fluid wrapper-navbar">
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
                     <nav class="navbar navbar-light navbar-full bg-faded container" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 
-                        <div class="container-fluid">
+                        <div class="container">
                             <div class="navbar-header">
                                 <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-                                <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".mobile">
+                                <button class="navbar-toggle hidden-lg-up" type="button" data-toggle="collapse" data-target=".mobile">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <!-- Your site title as branding in the menu -->
-                                <?php if (!has_custom_logo()) { ?>
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                    <?php bloginfo( 'name' ); ?>
-                                </a>
-                                <?php } else { the_custom_logo(); } ?><!-- end custom logo -->
                             </div>
                             <!-- The WordPress Menu goes here -->
                             <?php wp_nav_menu(
                                 array(
                                     'theme_location' => 'primary',
-                                    'container_class' => 'collapse navbar-toggleable-xs mobile',
+                                    'container_class' => 'collapse navbar-toggleable-md mobile',
                                     'menu_class' => 'nav navbar-nav',
                                     'fallback_cb' => '',
                                     'menu_id' => 'main-menu',

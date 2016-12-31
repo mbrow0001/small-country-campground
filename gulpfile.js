@@ -109,7 +109,8 @@ gulp.task('cleancss', function() {
  *  Watches for changes
  */
 gulp.task('watch-dev', function() {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']);    
     gulp.watch('./css/style.css');
     gulp.watch('./js/*.js', ['scripts']);
 });
