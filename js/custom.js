@@ -3,17 +3,15 @@ jQuery(document).ready(function($) {
   /*
   **  Parallax 
   */
-  
   $('.parallax-window').parallax({
     naturalWidth: 800,
     naturalHeight: 400
   });
 
   /*
-  **  FullPage.js 
+  **  FullPage.js
   */
   $('#fullpage').fullpage({ });
-
 
   /*
   **  Scroll Reveal 

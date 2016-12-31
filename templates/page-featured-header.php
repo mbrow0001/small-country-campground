@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width
+ * Template Name: Featured Header
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,7 +14,11 @@ get_header(); ?>
 
 <div class="wrapper" id="page-wrapper">
 
-  <div  id="content" class="container-fluid">
+  <div  id="content" class="container">
+
+	<div class="header-img row">
+		<?php the_post_thumbnail(); ?>
+	</div>
 
     <div class="row">
 
@@ -23,7 +27,7 @@ get_header(); ?>
        <main id="main" class="site-main" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'loop-templates/content', 'page' ); ?>                
+          <?php get_template_part( 'templates/content', 'page' ); ?>                
         <?php endwhile; // end of the loop. ?>
         
     </main><!-- #main -->
