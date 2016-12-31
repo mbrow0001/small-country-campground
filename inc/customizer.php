@@ -64,6 +64,29 @@ function cyberbility_starter_theme_customize_register( $wp_customize ) {
         'settings'   => 'cyberbility_starter_theme_slider_loop_setting'
     ) );
 
+
+
+    // New Customizer Settings
+    $wp_customize->add_section( 'header_layout', array(
+      'title' => __( 'Header Layout' ),
+      'description' => __( 'Add custom CSS here' ),
+      'panel' => '', // Not typically needed.
+      'priority' => 105,
+      'capability' => 'edit_theme_options',
+      'theme_supports' => '', // Rarely needed.
+    ) );
+
+    $wp_customize->add_control( 'header_layout_options', array(
+      'label' => __( 'Layout Options' ),
+      'type' => 'radio',
+      'section' => 'header_layout',
+    ) );
+
+    $wp_customize->add_setting( 'accent_color', array(
+      'default' => '#f72525',
+      'sanitize_callback' => 'sanitize_hex_color',
+    ) );
+
 }
 add_action( 'customize_register', 'cyberbility_starter_theme_customize_register' );
 
