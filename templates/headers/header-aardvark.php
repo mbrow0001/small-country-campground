@@ -21,7 +21,35 @@
             <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
             <?php wp_head(); ?>
             <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
-            <style>*{font: 700 1.2rem 'Amatic SC', cursive;}</style>
+            <style>
+                *{font: 700 1.2rem 'Amatic SC', cursive;}
+                .header-logo {
+                    display: inline-block;
+                    padding: 40px;
+                    text-align: center;
+                    width: 100%;
+                }
+                nav {
+                  width: 1199px; 
+                }
+                nav .mobile {
+                    text-align: center; 
+                }
+                nav .mobile #main-menu {
+                  display: inline-block !important;
+                  text-align: center;
+                  margin: 0 auto; 
+                }
+                nav .mobile #main-menu .nav-item {
+                    margin-left: 3rem; 
+                }
+                nav .mobile #main-menu a {
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    font-size: 1.8rem;
+                    color: #000; 
+                }
+            </style>
         </head>
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
