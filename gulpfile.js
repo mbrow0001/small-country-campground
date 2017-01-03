@@ -132,11 +132,11 @@ gulp.task('scripts', function() {
         .pipe(uglify())
         .pipe(gulp.dest('./js/'))
 
-    // gulp.src(jsFiles)
-    //     .pipe(plumber({ errorHandler: onError }))
-    //     .pipe(concat('theme.js'))
-    //     .pipe(gulp.dest('./js/'))
-    //     .pipe(reload({stream: true}));
+    gulp.src(jsFiles)
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(concat('theme.js'))
+        .pipe(gulp.dest('./js/'))
+        .pipe(reload({stream: true}));
 });
 
 /**
