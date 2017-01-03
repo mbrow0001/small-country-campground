@@ -1,5 +1,17 @@
 /* CSS Stylesheet */
 
+.shadow {
+           position: absolute;
+           background: rgba(0,0,0,0.35);
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           z-index: 1;
+           transition: all 0.2s ease-in-out;
+       }
+
+
 
 .service-boxes {
 	text-align: center;
@@ -65,4 +77,78 @@
 .service-boxes .service-box:hover{
 	transition: background-color 0.5s ease;
 	background-color:rgb(95, 98, 115);
+}
+
+#colorstrip{
+	height: 5px;
+	width:19%;
+    border-style: solid;
+    border-color: rgb(241, 178, 14);
+    background-color: rgb(241, 178, 14);
+    margin-right:5%;
+   
+}
+.nearusbox{
+	position: relative;
+	opacity: 1;
+    padding: 0px;
+    background-color: rgb(53, 55, 64);
+    height: 388px;
+    color:white;
+     background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+   overflow:hidden;
+}
+.nearusbox:hover .bg-img{
+	 transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.nearusbox .bg-img{
+	background-position: center;
+  	background-size: cover;
+  	width: 100%;
+  	height: 100%;
+  	z-index: -1;
+transition: transform 0.5s ease-in-out;
+}
+.nearusbox--height2 { height: 530px; }
+.nearusbox--height1 { height: 250px; }
+.nearusbox--height3 { height: 246px; }
+.nearusbox--height4 { height: 664px; }
+
+.nearusbox--spacer{	height: 30px;}
+
+.nearusbox__title,
+ .nearusbox__btn {
+   color:white;
+    position: absolute;
+    z-index: 99;   
+}
+.nearusbox__btn{
+	right: 20px;
+    bottom:  20px;
+    
+}
+.nearusbox__title{
+	left: 20px;
+    top: 35px;
+    color:white;
+    right:20px;
+    line-height: 1.5;
+
+}
+
+.nearusbox__body{
+	line-height:1.9;
+	font-family: cutive;
+	font-size: 0.9rem;
+}
+.nearusbox--lead{
+	padding: 30px 40px;
+	
+}
+.nearusbox--lead__title{
+	font-family: Raleway;
+	margin-bottom: 30px;
 }
