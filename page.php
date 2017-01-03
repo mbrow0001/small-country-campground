@@ -9,9 +9,12 @@
  *
  * @package cyberbility-starter
  */
-
-get_header(); ?>
-
+$header = get_theme_mod( 'header_layout_choice', 'default');
+if ( $header !== 'default') {
+    get_template_part('templates/headers/header', $header);
+} else {
+    get_header();
+} ?>
 <div class="wrapper" id="page-wrapper">
     
     <div  id="content" class="container">
@@ -23,8 +26,7 @@ get_header(); ?>
                  <main id="main" class="site-main" role="main">
 
                     <?php while ( have_posts() ) : the_post(); ?>
-
-                        <?php get_template_part( 'loop-templates/content', 'page' ); ?>
+                        <?php get_template_part( 'templates/content', 'page' ); ?>
 
                         <?php
                             // If comments are open or we have at least one comment, load up the comment template

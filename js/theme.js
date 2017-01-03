@@ -5291,7 +5291,6 @@ jQuery(document).ready(function($) {
   /*
   **  Parallax 
   */
-  
   $('.parallax-window').parallax({
     naturalWidth: 800,
     naturalHeight: 400
@@ -5301,7 +5300,6 @@ jQuery(document).ready(function($) {
   **  FullPage.js 
   */
   $('#fullpage').fullpage({ });
-
 
   /*
   **  Scroll Reveal 
@@ -5410,5 +5408,4 @@ jQuery(document).ready(function($) {
         }
     }
   });
-
 });

@@ -12,7 +12,13 @@ css/*.map
 
 css/*.min.map
 
+css/style.css
+
+css/style.min.css
+
 js/theme.min.js
+
+js/theme.js
 
 **/.sass-cache
 

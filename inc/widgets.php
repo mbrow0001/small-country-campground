@@ -25,6 +25,16 @@ function cyberbility_starter_widgets_init() {
         'before_title'  => '',
         'after_title'   => '',
     ) );
+
+        register_sidebar( array(
+        'name'          => __( 'Header One', 'cyberbility-starter' ),
+        'id'            => 'header-one',
+        'description'   => 'Widget area below main content and above footer',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
 }
 add_action( 'widgets_init', 'cyberbility_starter_widgets_init' );
 ?>

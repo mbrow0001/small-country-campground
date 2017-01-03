@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * Configuration. */
 var basePaths = {
@@ -41,12 +42,8 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var rimraf = require('gulp-rimraf');
 var ignore = require('gulp-ignore');
-var sourcemaps = require('gulp-sourcemaps');
-var relativeSourcemapsSource = require('gulp-relative-sourcemaps-source');
-var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
 var jshint = require('gulp-jshint');
-var ftp = require('vinyl-ftp');
 var jscs = require('gulp-jscs');
 var gutil = require('gulp-util');
 var browserSync = require('browser-sync').create();
@@ -63,15 +60,13 @@ var onError = function(err) {
  * automatically reloads the page when files changed.
  */
 var browserSyncWatchFiles = [
-    './build/js/*.js',
     './css/*.min.css',
-    './js/*.min.js',
     './js/*.js',
     './**/*.php'
 ];
 
 var browserSyncOptions = {
-    proxy: "vccw.dev",
+    proxy: "smallcountry.dev",
     notify: false
 };
 
@@ -85,13 +80,9 @@ gulp.task('browser-sync', function() {
  */
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(relativeSourcemapsSource({dest: './css'}))
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass())
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./css'))
-        .pipe(reload({ stream: true }));;
 });
 
 /**
@@ -100,13 +91,10 @@ gulp.task('sass', function() {
  */
 gulp.task('cssnano', ['cleancss'], function() {
     return gulp.src('./css/*.css')
-        .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(plumber({ errorHandler: onError }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cssnano())
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./css/'))
-        .pipe(reload({ stream: true }));
 });
 
 gulp.task('cleancss', function() {
@@ -128,9 +116,9 @@ gulp.task('watch-prod', function() {
 });
 
 gulp.task('watch-dev', function() {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']);    
     gulp.watch('./css/style.css');
-    gulp.watch('./build/js/*.js', ['scripts']);
 });
 
 gulp.task('watch', ['browser-sync', 'watch-dev'], function() {});
@@ -161,7 +149,6 @@ gulp.task('scripts', function() {
  * Builds necessary files from npm dependencies to use gulp tasks.
  */
 gulp.task('build', function() {
-
     gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
 
@@ -185,35 +172,4 @@ gulp.task('build', function() {
 
     gulp.src(basePaths.node + 'tether/dist/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css'));
-});
-
-
-gulp.task('deploy', function() {
-
-    var conn = ftp.create({
-        host: '',
-        user: '',
-        password: '',
-        parallel: 10,
-        log: gutil.log
-    });
-
-    var globs = [
-        'page-templates/*.php',
-        'inc/*.php',
-        'css/*.css',
-        'js/*.js',
-        '*.php'
-    ];
-
-    // using base = '.' will transfer everything to /public_html correctly
-    // turn off buffering in gulp.src for best performance
-
-    return gulp.src(globs, {
-            base: '.',
-            buffer: false
-        })
-        .pipe(conn.newer('/www/wp-content/themes/theme-name')) // only upload newer files
-        .pipe(conn.dest('/www/wp-content/themes/theme-name'));
-
 });

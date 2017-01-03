@@ -7621,6 +7621,7 @@ textarea:focus::-moz-placeholder {
 # Modules - Add modules
 --------------------------------------------------------------*/
 /* ---- Masonry ---- */
+/* ---- grid ---- */
 .masonry {
   background: #EEE;
   margin: 0 auto;
@@ -7944,6 +7945,98 @@ body:after {
 .parallax-slider img {
   width: 100%; }
 
+.page-template-home-page {
+  /*
+	***	Welcome Section
+	*/ }
+  .page-template-home-page .wrapper-navbar nav {
+    background: #FFF !important;
+    padding: 1.5rem 0; }
+  .page-template-home-page .wrapper-navbar a, .page-template-home-page .wrapper-navbar .nav-link {
+    position: relative;
+    color: #242424;
+    font-weight: 400; }
+  .page-template-home-page .wrapper-navbar a:hover {
+    color: #000 !important; }
+  .page-template-home-page .wrapper-navbar a:before {
+    background: #2a8da6;
+    position: absolute;
+    display: block;
+    height: 1px;
+    right: 0;
+    width: 0%;
+    bottom: 3px;
+    content: "";
+    -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .page-template-home-page .wrapper-navbar a:hover:before {
+    width: 100%;
+    left: 0;
+    -webkit-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all, 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .page-template-home-page .carousel-inner .shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0; }
+  .page-template-home-page .carousel-inner .carousel-item {
+    height: 70vh;
+    overflow: hidden;
+    clear: both; }
+    .page-template-home-page .carousel-inner .carousel-item .cap {
+      position: absolute;
+      z-index: 999;
+      top: 30%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: 60%;
+      text-align: center; }
+      .page-template-home-page .carousel-inner .carousel-item .cap h1 {
+        font-size: 55px;
+        font-weight: 600;
+        color: #FFF; }
+      .page-template-home-page .carousel-inner .carousel-item .cap p {
+        color: #FFF;
+        padding-top: 40px;
+        max-width: 60%;
+        font-size: 18px;
+        margin: auto;
+        -webkit-transition: opacity 2s;
+        transition: opacity 2s; }
+  .page-template-home-page .welcome .big {
+    color: #000;
+    font-size: 55px;
+    font-weight: 800; }
+    .page-template-home-page .welcome .big em {
+      text-transform: capitalize;
+      font-weight: 300; }
+  .page-template-home-page .welcome .wrap {
+    padding-left: 20px; }
+    .page-template-home-page .welcome .wrap h5 {
+      font-weight: 700;
+      padding: 20px 0; }
+      .page-template-home-page .welcome .wrap h5 small {
+        font-weight: bold; }
+    .page-template-home-page .welcome .wrap p {
+      font-size: 14px;
+      color: #9f9f9f;
+      line-height: 22px; }
+  .page-template-home-page .second p {
+    margin-top: 25px;
+    font-size: 14px; }
+  .page-template-home-page .thrid .title {
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-weight: bold; }
+    .page-template-home-page .thrid .title em {
+      font-weight: 300; }
+
 /*--------------------------------------------------------------
 # Theme - Add your styles in theme/theme.scss
 --------------------------------------------------------------*/
@@ -8072,7 +8165,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-ghost {
   position: relative;
   color: #FFF;
-  border: 1px solid #FFF;
+  border: 1px solid #FFF; }
+
+.button.outline,
+.button.outward {
+  position: relative;
+  color: #111;
+  border: 1px solid #111;
   padding: 12px 20px;
   margin-top: 50px;
   display: inline-block;
@@ -8099,7 +8198,22 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f061";
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 20px; }
+
+.button.outline:hover,
+.button.outward:hover {
+  color: white;
+  background-color: #111; }
+
+.button.outline:after, .button.outward:after {
+  background: url(/wp-content/uploads/2016/10/arrow-right-black.png) no-repeat center center;
+  width: 21px;
+  height: 17px;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -20px;
   opacity: 0;
   -moz-transition: 200ms;
   -o-transition: 200ms;
@@ -8110,7 +8224,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate3d(0, 0, 0); }
 
 .btn-ghost:hover:after {
-  color: #FFF;
+  color: #FFF; }
+
+.button.outline:hover:after, .button.outward:hover:after {
   -moz-transform: translate3d(10px, 0, 0);
   -webkit-transform: translate3d(10px, 0, 0);
   transform: translate3d(10px, 0, 0);
@@ -8247,5 +8363,3 @@ h1, h2, h3, h4, h5, h6 {
     font: bold 70px/70px "Cutive", serif;
     color: #FFF;
     z-index: 3; }
-
-/*# sourceMappingURL=style.css.map */

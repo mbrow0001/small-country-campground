@@ -26,7 +26,6 @@
             <div id="page" class="hfeed site">
 
                 <div class="wrapper-fluid wrapper-navbar">
-
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
 
                     <nav class="navbar navbar-light navbar-full bg-faded container-fluid" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
@@ -124,4 +123,4 @@
                     </div>
                 </div>
 
-                </div><!-- .wrapper-navbar end -->
+            </div><!-- .wrapper-navbar end -->

@@ -4,6 +4,13 @@
     position: relative;
     color: #FFF;
     border: 1px solid #FFF;
+}
+
+.button.outline, 
+.button.outward {
+    position: relative;
+    color: #111;
+    border: 1px solid #111;
     padding: 12px 20px;
     margin-top: 50px;
     display: inline-block;
@@ -32,6 +39,23 @@
     position: absolute;
     top: 10px;
     right: 20px;
+}
+
+.button.outline:hover, 
+.button.outward:hover {
+    color: white;
+    background-color: #111;
+}
+
+.button.outline:after, .button.outward:after {
+    background: url(/wp-content/uploads/2016/10/arrow-right-black.png) no-repeat center center;
+    width: 21px;
+    height: 17px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -20px;
     opacity: 0;
     -moz-transition: 200ms;
     -o-transition: 200ms;
@@ -43,6 +67,9 @@
 }
 .btn-ghost:hover:after {
     color: #FFF;
+}
+
+.button.outline:hover:after, .button.outward:hover:after {
     -moz-transform: translate3d(10px,0,0);
     -webkit-transform: translate3d(10px,0,0);
     transform: translate3d(10px,0,0);

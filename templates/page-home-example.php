@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Home Page Demo
+* Template Name: Home Page Example
 *
 * This is the template that displays all pages by default.
 * Please note that this is the WordPress construct of pages
