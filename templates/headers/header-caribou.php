@@ -21,15 +21,45 @@
             <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
             <?php wp_head(); ?>
             <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-            <style>*{font: 700 1.2rem 'Amatic SC', cursive;}</style>
+            <style>
+                *{font: 700 1.2rem 'Amatic SC', cursive;}
+                .header-logo {
+                    display: inline-block;
+                    padding: 40px 0;
+                    width: 100%;
+                }
+            </style>
         </head>
         <body <?php body_class(); ?>>
             <div id="page" class="hfeed site">
 
-            <h1>Caribou</h1>
-
                 <div class="wrapper-fluid wrapper-navbar">
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'cyberbility-starter' ); ?></a>
+                    <div class="container">
+                        <div class="row header-logo">
+                            <div class="col-lg-3">                                                       
+                                <!-- Your site title as branding in the menu -->
+                                <?php if ( !get_header_image() ) { ?>
+                                    <h1>
+                                        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                            <?php bloginfo( 'name' ); ?>
+                                        </a>
+                                    </h1>
+                                <?php } else { ?>                       
+                                    <?php if ( get_header_image() ) : ?>
+                                    <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                        <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+                                    </a>
+                                    <?php endif; // End header image check. ?>
+                                <?php } ?>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="pull-right">
+                                    <?php dynamic_sidebar('header-one'); ?>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <nav class="navbar navbar-light navbar-full bg-faded container" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 
                         <div class="container-fluid">
@@ -41,12 +71,6 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <!-- Your site title as branding in the menu -->
-                                <?php if (!has_custom_logo()) { ?>
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                    <?php bloginfo( 'name' ); ?>
-                                </a>
-                                <?php } else { the_custom_logo(); } ?><!-- end custom logo -->
                             </div>
                             <!-- The WordPress Menu goes here -->
                             <?php wp_nav_menu(

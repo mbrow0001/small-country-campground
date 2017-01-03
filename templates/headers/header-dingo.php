@@ -34,19 +34,27 @@
 
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-                                <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".mobile">
+                                <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->                                
+                                <button id="trigger-overlay" class="navbar-toggle hidden-sm-up overlay-close" type="button" data-toggle="collapse" data-target=".mobile">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
-                                </button>
+                                </button>                                                              
                                 <!-- Your site title as branding in the menu -->
-                                <?php if (!has_custom_logo()) { ?>
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                    <?php bloginfo( 'name' ); ?>
-                                </a>
-                                <?php } else { the_custom_logo(); } ?><!-- end custom logo -->
+                                <?php if ( !get_header_image() ) { ?>
+                                    <h1>
+                                        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                            <?php bloginfo( 'name' ); ?>
+                                        </a>
+                                    </h1>
+                                <?php } else { ?>                       
+                                    <?php if ( get_header_image() ) : ?>
+                                    <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                        <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+                                    </a>
+                                    <?php endif; // End header image check. ?>
+                                <?php } ?>
                             </div>
                             <!-- The WordPress Menu goes here -->
                             <?php wp_nav_menu(

@@ -8,6 +8,9 @@ function cyberbility_starter_scripts() {
 	wp_enqueue_script('jquery'); 
 	wp_enqueue_script( 'cyberbility-starter-js', get_template_directory_uri() . '/js/theme.min.js', array(), '0.0.1', true );
 
+	 // Template Header - Caribou
+	wp_enqueue_script( 'caribou-css', get_template_directory_uri() . '/css/header-caribou.css', array(), '0.0.1', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
