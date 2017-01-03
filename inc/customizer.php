@@ -22,36 +22,36 @@ function cyberbility_starter_theme_customize_register( $wp_customize ) {
 
     $wp_customize->add_section( 'cyberbility_starter_theme_slider_options', array(
         'title'          => __( 'Slider Settings', 'cyberbility-starter' )
-    ) );
+        ) );
 
     $wp_customize->add_setting( 'cyberbility_starter_theme_slider_count_setting', array(
         'default'        => '1',
         'sanitize_callback' => 'absint'
-    ) );
+        ) );
 
     $wp_customize->add_control( 'cyberbility_starter_theme_slider_count', array(
         'label'      => __( 'Number of slides displaying at once', 'cyberbility-starter' ),
         'section'    => 'cyberbility_starter_theme_slider_options',
         'type'       => 'text',
         'settings'   => 'cyberbility_starter_theme_slider_count_setting'
-    ) );
+        ) );
 
     $wp_customize->add_setting( 'cyberbility_starter_theme_slider_time_setting', array(
         'default'        => '5000',
         'sanitize_callback' => 'absint'
-    ) );
+        ) );
 
     $wp_customize->add_control( 'cyberbility_starter_theme_slider_time', array(
         'label'      => __( 'Slider Time (in ms)', 'cyberbility-starter' ),
         'section'    => 'cyberbility_starter_theme_slider_options',
         'type'       => 'text',
         'settings'   => 'cyberbility_starter_theme_slider_time_setting'
-    ) );
+        ) );
 
     $wp_customize->add_setting( 'cyberbility_starter_theme_slider_loop_setting', array(
         'default'        => 'true',
         'sanitize_callback' => 'esc_textarea'
-    ) );
+        ) );
 
     $wp_customize->add_control( 'cyberbility_starter_theme_loop', array(
         'label'      => __( 'Loop Slider Content', 'cyberbility-starter' ),
@@ -60,9 +60,39 @@ function cyberbility_starter_theme_customize_register( $wp_customize ) {
         'choices'  => array(
             'true'  => 'yes',
             'false' => 'no',
-        ),
+            ),
         'settings'   => 'cyberbility_starter_theme_slider_loop_setting'
-    ) );
+        ) );
+
+
+
+    // New Customizer Settings
+
+    $wp_customize->add_section( 'header_layout', array(
+        'title'          => __( 'Header Layout', 'cyberbility-starter' ),
+        'priority'      => 105,
+        ) );
+
+    $wp_customize->add_setting( 'header_layout_choice', array(
+      'default' => 'aardvark',      
+        'capability'     => 'edit_theme_options',
+        'type'           => 'theme_mod',
+      ) );
+
+    $wp_customize->add_control( 'header_layout_options', array(
+      'label'   => __( 'Layout Options', 'cyberbility-starter' ),
+      'section' => 'header_layout',
+      'type'     => 'radio',
+      'choices'  => array(
+        'default'  => 'Default',
+        'aardvark'  => 'Aardvark',
+        'badger'    => 'Badger',
+        'caribou'   => 'Caribou',
+        'dingo'     => 'Dingo',
+        ),        
+      'settings'   => 'header_layout_choice'
+      ) );
+
 
 }
 add_action( 'customize_register', 'cyberbility_starter_theme_customize_register' );

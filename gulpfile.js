@@ -109,7 +109,8 @@ gulp.task('cleancss', function() {
  *  Watches for changes
  */
 gulp.task('watch-dev', function() {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']);    
     gulp.watch('./css/style.css');
     gulp.watch('./js/*.js', ['scripts']);
 });
@@ -131,11 +132,11 @@ gulp.task('scripts', function() {
         .pipe(uglify())
         .pipe(gulp.dest('./js/'))
 
-    // gulp.src(jsFiles)
-    //     .pipe(plumber({ errorHandler: onError }))
-    //     .pipe(concat('theme.js'))
-    //     .pipe(gulp.dest('./js/'))
-    //     .pipe(reload({stream: true}));
+    gulp.src(jsFiles)
+        .pipe(plumber({ errorHandler: onError }))
+        .pipe(concat('theme.js'))
+        .pipe(gulp.dest('./js/'))
+        .pipe(reload({stream: true}));
 });
 
 /**
