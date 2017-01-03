@@ -40,11 +40,12 @@
                             <!-- Your site title as branding in the menu -->
                             <!-- end custom logo -->
                         </div>
+                        
                         <!-- The WordPress Menu goes here -->
                         <?php wp_nav_menu(
                             array(
                                 'theme_location' => 'primary',
-                                'container_class' => 'collapse navbar-toggleable-xs mobile',
+                                'container_class' => 'collapse navbar-toggleable-xs mobile pull-right',
                                 'menu_class' => 'nav navbar-nav',
                                 'fallback_cb' => '',
                                 'menu_id' => 'main-menu',
