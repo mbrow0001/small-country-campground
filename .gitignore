@@ -12,8 +12,6 @@ css/*.map
 
 css/*.min.map
 
-js/theme.min.js
-
 **/.sass-cache
 
 **/.sass-cache/*
