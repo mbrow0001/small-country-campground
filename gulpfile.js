@@ -67,7 +67,9 @@ var browserSyncWatchFiles = [
 
 var browserSyncOptions = {
     proxy: "smallcountry.dev",
-    notify: false
+    notify: false,
+    online: true,
+    reloadDelay: 2000
 };
 
 gulp.task('browser-sync', function() {
