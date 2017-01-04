@@ -60,7 +60,7 @@ var onError = function(err) {
  * automatically reloads the page when files changed.
  */
 var browserSyncWatchFiles = [
-    './css/*.min.css',
+    './css/*.css',
     './js/*.js',
     './**/*.php'
 ];
@@ -68,8 +68,6 @@ var browserSyncWatchFiles = [
 var browserSyncOptions = {
     proxy: "smallcountry.dev",
     notify: false,
-    online: true,
-    reloadDelay: 2000
 };
 
 gulp.task('browser-sync', function() {
