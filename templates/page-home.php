@@ -72,127 +72,138 @@ get_header(); ?>
           <section class="welcome container">
 
             <div class="wtp__full-boxes">
-              <div class="col-md-6 col-sm-12">
-                <div class="box box--tall">                    
+              <div class="col-md-6 col-sm-12 wtp--padding">
+                <a class="box box--tall"> 
+                  <h2 class="title">Check Out <br> Upcoming Events at <br> the Campground</h2>                   
                   <div class="bg-img box--upcoming"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
-                  <a href="#" class="btn-ghost">Check Out Upcoming Events at the Campground</a>
+                  <button href="#" class="btn-ghost">Check Out Upcoming Events at the Campground</button>
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </div>
+                </a>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="box box--tall">                    
+                <a class="box box--tall">                    
                   <div class="bg-img box--youtube"></div>
-                  <div class="gradient"></div>
                   <div class="shadow"></div>
                   <i class="btn-play fa fa-play"></i>
-                </div>
+                </a>
               </div>
+            </div>
+
+              
+              <div class="clearfix"></div>
+              <div class="spacer"></div>
 
               <!-- Ways to Play --> 
               <div class="col-md-3">
-                <div class="box box--desc">                  
+                <a class="box box--desc">                  
                   <h4 class="box--desc__title"><strong>Ways to Play</strong></h4>
                   <p>Here we take play very seriously. Each year we improve and add ways to play that the whole family will love. Join us to make the types of memories that last your family a lifetime.</p>
-                </div>
+                </a>
               </div>
               <div class="col-md-9">
                 <div class="col-md-4">
-                  <div class="box">                      
+                  <a class="box">                      
                     <div class="bg-img box--toys"></div>
                     <div class="gradient"></div>
                     <div class="shadow"></div>
                     <h5 class="title">Lake Toys</h5>                      
                     <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="box">                      
+                  <a class="box">                      
                     <div class="bg-img box--play"></div>
                     <div class="gradient"></div>
                     <div class="shadow"></div>
                     <h5 class="title">Playgrounds</h5>                      
                     <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="box">                      
+                  <a class="box">                      
                     <div class="bg-img box--mini"></div>
                     <div class="gradient"></div>
                     <div class="shadow"></div>
                     <h5 class="title">Mini Golf</h5>                      
                     <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-md-3">
-                  <div class="box">                      
+                  <a class="box" href="/wp-content/uploads/2016/12/26.jpg"  alt="" data-lightbox="home">
                     <div class="bg-img box--camp"></div>
                     <div class="gradient"></div>
                     <div class="shadow"></div>
-                  </div>
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <div class="col-md-9">
-                  <div class="box">                      
+                  <a class="box">                      
                     <div class="bg-img box--hiking"></div>
                     <div class="gradient"></div>
                     <div class="shadow"></div>
                     <h5 class="title">Hiking Trails</h5>                      
                     <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="box">                  
+                <a class="box">                  
                   <div class="bg-img box--amen"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
                   <h5 class="title">Amenities</h5>                  
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <a style="display: block;" href="http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg" class="box" data-lightbox="image-1">                              
-                  <div class="bg-img box--bag"></div>
-                  <div class="gradient"></div>
-                  <div class="shadow"></div>
                 </a>
               </div>
               <div class="col-md-3">
-                <div class="box">                  
+                <a href="/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg" class="box" data-lightbox="home">                              
+                  <div class="bg-img box--bag"></div>
+                  <div class="gradient"></div>
+                  <div class="shadow"></div>                  
+                  <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg" class="box" data-lightbox="home">                  
                   <div class="bg-img box--paint"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
-                </div>
+                  <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
               </div>
               <div class="col-md-3">
-                <div class="box">                  
+                <a class="box">                  
                   <div class="bg-img box--pool"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
                   <h5 class="title">The Pool</h5>
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </div>
+                </a>
               </div>
+
+              <div class="clearfix"></div>
+              <div class="spacer"></div>
+
               <div class="col-md-9">
-                <div class="box box--tall">                  
+                <a class="box box--tall">                  
                   <div class="bg-img box--near"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
                   <h5 class="title">What's Near Us</h5>                  
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </div>
+                </a>
               </div>
               <div class="col-md-3">
-                <div class="box box--tall">                  
+                <a class="box box--tall">                  
                   <div class="bg-img box--camp2"></div>
                   <div class="gradient"></div>
                   <div class="shadow"></div>
                   <h5 class="title">???</h5>                  
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </div>
+                </a>
               </div>
-            </div>
           </section>
 
           <div class="spacer"></div>
