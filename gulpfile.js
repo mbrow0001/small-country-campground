@@ -24,6 +24,7 @@ var jsFiles = [
     basePaths.node + 'scrollreveal/dist/scrollreveal.min.js',
     basePaths.node + 'isotope-layout/dist/isotope.pkgd.min.js',
     basePaths.node + 'owl.carousel/dist/owl.carousel.min.js',
+    basePaths.node + 'lightbox2/dist/js/lightbox.min.js',
     // Custome Theme Files
     'js/parallax.min.js',
     'js/custom.js'
