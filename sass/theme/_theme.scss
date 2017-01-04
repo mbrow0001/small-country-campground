@@ -173,22 +173,41 @@ h1,h2,h3,h4,h5,h6 {
 			}
 		}
 	}
-
 	a.box--tall {
 		height: 325px;
 	}
-	
 	a.box--desc {
 		height: 420px !important;
 		background: $brand-second;
 		color: #FFF;
 		padding:45px 30px;
-
 		.box--desc__title {
 			font: 100 55px/50px $font-one;
 			margin-bottom: 50px;
 		}
-
+	}
+	a.box--video {
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		i {
+			opacity: 1;
+			top: 40%;
+		}
+		&:focus,
+		&:active,
+		&:visited {
+			i {
+				opacity: 0;
+				z-index: -1;
+			}
+			.shadow {
+				z-index: -1;
+			}
+		}
 	}
 
 	.box--upcoming 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg) }

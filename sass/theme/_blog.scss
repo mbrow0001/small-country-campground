@@ -1,0 +1,29 @@
+.blog--home {
+
+    border: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+
+	article {
+		height: 450px;
+		background: #FFF;
+
+		.blog__img {
+			display: block;	
+		    background: center center/cover no-repeat;
+		    height: 45%;
+		    padding: 0;
+		}
+
+		.date {
+			color: $brand-primary;
+		}
+
+		.blog__detail {
+			height: 55%;
+		    border: none;
+		    border-right: 1px solid #ccc;
+		    padding: 30px;
+		}
+	}
+}

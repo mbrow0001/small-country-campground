@@ -81,8 +81,9 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-md-6 col-sm-12">
-                <a class="box box--tall">                    
+                <a href="#vid" class="box box--tall box--video">                    
                   <div class="bg-img box--youtube"></div>
+                  <iframe width="100%" height="325" src="https://www.youtube.com/embed/JUWTCEtp5Mg?autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>
                   <div class="shadow"></div>
                   <i class="btn-play fa fa-play"></i>
                 </a>
@@ -304,7 +305,7 @@ get_header(); ?>
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 10th, 2017</p>
-                        <h4>Blog Title</h4>
+                        <h4 class="blog__title">Blog Title</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
                       </div>
                     </article>
@@ -312,14 +313,14 @@ get_header(); ?>
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 11th, 2017</p>
-                        <h4>Blog Title</h4>
+                        <h4 class="blog__title">Blog Title</h4>
                         <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
                     </article>
                     <article class="col-md-4 px-0">
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 15th, 2017</p>
-                        <h4>Blog Title</h4>
+                        <h4 class="blog__title">Blog Title</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
                     </article>
                   </div>
