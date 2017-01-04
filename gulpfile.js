@@ -67,8 +67,10 @@ var browserSyncWatchFiles = [
 ];
 
 var browserSyncOptions = {
-    proxy: "smallcountry.dev",
-    notify: false,
+    proxy: "country.dev",
+    port:      3060,
+    open:      false,
+    notify:    false,
 };
 
 gulp.task('browser-sync', function() {

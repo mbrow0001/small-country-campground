@@ -7486,9 +7486,6 @@ a.skip-link {
   margin-bottom: 0px; }
 
 /* Main content */
-#content article {
-  margin: 40px 0; }
-
 #content header {
   margin: 20px 0; }
 
@@ -8184,6 +8181,23 @@ h1, h2, h3, h4, h5, h6 {
     font: 100 55px/50px "Raleway", sans-serif;
     margin-bottom: 50px; }
 
+.welcome a.box--video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.welcome a.box--video i {
+  opacity: 1;
+  top: 40%; }
+
+.welcome a.box--video:focus i, .welcome a.box--video:active i, .welcome a.box--video:visited i {
+  opacity: 0;
+  z-index: -1; }
+
+.welcome a.box--video:focus .shadow, .welcome a.box--video:active .shadow, .welcome a.box--video:visited .shadow {
+  z-index: -1; }
+
 .welcome .box--upcoming {
   background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg); }
 
@@ -8526,3 +8540,36 @@ h1, h2, h3, h4, h5, h6 {
     font: bold 70px/70px "Cutive", serif;
     color: #FFF;
     z-index: 3; }
+
+.blog--home article {
+  height: 450px;
+  background: #FFF; }
+  .blog--home article .blog__img {
+    display: block;
+    background: center center/cover no-repeat;
+    height: 45%;
+    padding: 0; }
+  .blog--home article .date {
+    color: #941134; }
+  .blog--home article .blog__detail {
+    height: 55%;
+    border: none;
+    border-right: 1px solid #ccc;
+    padding: 30px; }
+
+.blog--home #owc-home--blog .owl-stage-outer {
+  border: 1px solid #ccc;
+  border-top: none;
+  border-right: none; }
+
+.blog--home #owc-home--blog .owl-nav {
+  width: 100%;
+  margin: 10px auto 0; }
+  .blog--home #owc-home--blog .owl-nav div {
+    background: none;
+    font-size: 60px;
+    color: #F1B20E; }
+
+.blog--home #owc-home--blog .owl-nav.disabled,
+.blog--home #owc-home--blog .owl-dots.disabled {
+  display: inline-block !important; }
