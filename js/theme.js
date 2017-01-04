@@ -5386,7 +5386,7 @@ jQuery(document).ready(function($) {
   /*
   **  Owl Carousel
   */
-  $('.owc-basic').owlCarousel({ 
+  $('.owc-basic').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -5421,4 +5421,24 @@ jQuery(document).ready(function($) {
         }
     }
   });
-});
+
+  $('#owc-home--blog').owlCarousel({ 
+    loop:true,
+    nav: true,
+    navText: ['<i class="fa fa-arrow-circle-o-left"></i>','<i class="fa fa-arrow-circle-o-right"></i>'],
+    dots: false,
+    margin:0,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+
+}); // end Jquery

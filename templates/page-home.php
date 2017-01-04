@@ -299,9 +299,9 @@ get_header(); ?>
                 <div class="spacer"></div>
                 
                 <!-- Blog Articles -->
-                <section class="container blog--home">
-                  <div class="row">
-                    <article class="col-md-4 px-0">
+                <section class="container px-0 blog--home">
+                  <div id="owc-home--blog" class="owl-carousel owl-theme">
+                    <article class="item">
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 10th, 2017</p>
@@ -309,14 +309,14 @@ get_header(); ?>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
                       </div>
                     </article>
-                    <article class="col-md-4 px-0">
+                    <article class="item">
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 11th, 2017</p>
                         <h4 class="blog__title">Blog Title</h4>
                         <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
                     </article>
-                    <article class="col-md-4 px-0">
+                    <article class="item">
                       <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
                       <div class="blog__detail">
                         <p class="date">January 15th, 2017</p>
