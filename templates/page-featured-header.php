@@ -17,13 +17,17 @@ if ( $header !== 'default') {
   get_header();
 } ?>
 
+<div class="header-img" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+  <div class="shadow"></div>
+  <div class="title">
+    <?php the_title(); ?>
+  </div>
+</div>
+
+
 <div class="wrapper" id="page-wrapper">
 
   <div  id="content" class="container">
-
-	<div class="header-img row">
-		<?php the_post_thumbnail(); ?>
-	</div>
 
     <div class="row">
 
