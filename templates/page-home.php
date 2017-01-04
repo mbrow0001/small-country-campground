@@ -202,6 +202,7 @@ get_header(); ?>
 
           <!-- Ways to Stay -->
           <div class="service-boxes row">
+            <div class="spacer"></div>
             <div class="container">
               <div class="row">
                 <div class="col-md-4 service-box">                  
@@ -230,7 +231,6 @@ get_header(); ?>
                    </div>
 
                    <div class="clearfix"></div>
-                   <div class="spacer"></div>
 
                    <div class="col-md-4 service-box">                    
                     <div class="service-icon">
@@ -258,11 +258,10 @@ get_header(); ?>
                       </div>
                     </div>
                   </div>
+                  <div class="spacer"></div>
                 </div>
                 <!-- end: Ways to Stay -->
-                
-                <div class="spacer"></div>
-                
+
                 <!-- Testimonials Slider -->
                 <section class="row">
                   <div class="parallax-window pw--home-testi" data-speed="0.8">
@@ -297,25 +296,32 @@ get_header(); ?>
                 </section>
 
                 <div class="spacer"></div>
-                <div class="spacer"></div>
-
-                <section class="container">
+                
+                <!-- Blog Articles -->
+                <section class="container blog--home">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="/wp-content/uploads/2016/12/IMG_0770.jpg" alt="">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos, doloribus provident. Voluptatum accusamus aperiam, molestiae tempore obcaecati delectus amet facere laboriosam suscipit corrupti.</p>
-                      <a class="btn btn-ghost" href="#">Read Story</a>
-                    </div>
-                    <div class="col-md-4">
-                      <img src="/wp-content/uploads/2016/12/IMG_0770.jpg" alt="">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iusto earum cum tenetur laborum! Ex labore, eveniet alias quas praesentium dolore, rem dolor, recusandae ducimus esse temporibus odit amet tempore.</p>
-                      <a class="btn btn-ghost" href="#">Read Story</a>
-                    </div>
-                    <div class="col-md-4">
-                      <img src="/wp-content/uploads/2016/12/IMG_0770.jpg" alt="">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, magnam at voluptatem. Eveniet, aliquam, vitae. Illo consectetur odit unde, assumenda ratione nobis, quasi voluptate, quas architecto molestiae accusamus perferendis. Commodi.</p>
-                      <a class="btn btn-ghost" href="#">Read Story</a>
-                    </div>
+                    <article class="col-md-4 px-0">
+                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
+                      <div class="blog__detail">
+                        <p class="date">January 10th, 2017</p>
+                        <h4>Blog Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
+                      </div>
+                    </article>
+                    <article class="col-md-4 px-0">
+                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
+                      <div class="blog__detail">
+                        <p class="date">January 11th, 2017</p>
+                        <h4>Blog Title</h4>
+                        <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
+                    </article>
+                    <article class="col-md-4 px-0">
+                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
+                      <div class="blog__detail">
+                        <p class="date">January 15th, 2017</p>
+                        <h4>Blog Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
+                    </article>
                   </div>
                 </section>
 

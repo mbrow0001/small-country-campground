@@ -7486,9 +7486,6 @@ a.skip-link {
   margin-bottom: 0px; }
 
 /* Main content */
-#content article {
-  margin: 40px 0; }
-
 #content header {
   margin: 20px 0; }
 
@@ -8526,3 +8523,21 @@ h1, h2, h3, h4, h5, h6 {
     font: bold 70px/70px "Cutive", serif;
     color: #FFF;
     z-index: 3; }
+
+.blog--home {
+  border: 1px solid #ccc;
+  border-top: none;
+  border-right: none; }
+  .blog--home article {
+    height: 450px;
+    background: #FFF; }
+    .blog--home article .blog__img {
+      display: block;
+      background: center center/cover no-repeat;
+      height: 45%;
+      padding: 0; }
+    .blog--home article .blog__detail {
+      height: 55%;
+      border: none;
+      border-right: 1px solid #ccc;
+      padding: 30px; }
