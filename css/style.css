@@ -8065,7 +8065,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 125px;
   z-index: -1; }
 
 .welcome .wtp__boxes .wtp_box--blue .shadow {
@@ -8236,47 +8236,45 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF; }
 
 .service-boxes {
+  background: #EFEFEF;
   text-align: center; }
   .service-boxes .service-box {
     display: inline-block;
     text-align: center;
     padding: 40px; }
-    .service-boxes .service-box .service-icon a {
-      text-decoration: none; }
-    .service-boxes .service-box .service-icon i {
-      display: inline-block;
-      font-size: 45px;
-      line-height: 60px;
-      color: #5f6273;
-      transition: all 0.5s ease;
-      -webkit-transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    .service-boxes .service-box .service-icon h4 {
-      color: #5f6273;
-      font-size: 23px;
-      padding: 25px 0 5px;
-      -webkit-transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    .service-boxes .service-box .service-icon p {
-      font-size: 15px;
-      line-height: 26px; }
+    .service-boxes .service-box .service-icon {
+      color: #941134; }
+      .service-boxes .service-box .service-icon a {
+        color: #941134;
+        text-decoration: none; }
+      .service-boxes .service-box .service-icon i {
+        display: inline-block;
+        font-size: 45px;
+        line-height: 60px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
+      .service-boxes .service-box .service-icon h4 {
+        padding: 25px 0 5px;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
     .service-boxes .service-box:hover {
       background: #941134; }
       .service-boxes .service-box:hover .service-icon i {
+        color: #FFF;
         transition: all 0.5s ease;
-        color: #FFFFFF;
         font-size: 54px;
         line-height: 60px;
         -webkit-transform: rotateY(360deg);
         -ms-transform: rotateY(360deg);
         transform: rotateY(360deg); }
       .service-boxes .service-box:hover .service-icon h4 {
-        transition: color 0.5s ease;
-        color: #FFFFFF; }
+        color: #FFF;
+        transition: color 0.5s ease; }
 
 .service-box:hover {
   transition: background-color 0.5s ease;

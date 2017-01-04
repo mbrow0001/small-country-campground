@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 125px;
 	z-index: -1;
 }
 
@@ -224,6 +224,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .service-boxes {
+	background: $light;
 	text-align: center;
 	
 	.service-box {
@@ -232,7 +233,9 @@ h1,h2,h3,h4,h5,h6 {
 		padding: 40px;
 
 		.service-icon {
+			color: $brand-primary;
 			a {
+				color: $brand-primary;
 				text-decoration: none;
 			}
 
@@ -240,36 +243,26 @@ h1,h2,h3,h4,h5,h6 {
 				display: inline-block;
 				font-size: 45px;
 				line-height: 60px;
-				color: rgb(95, 98, 115);
 				transition: all 0.5s ease;
 				-webkit-transition: all 0.6s ease;
 				-moz-transition: all 0.6s ease;
 				-o-transition: all 0.6s ease;
 				transition: all 0.6s ease;
 			}
-			 h4 {
-
-				color: rgb(95, 98, 115);
-				font-size: 23px;
+			h4 {
 				padding: 25px 0 5px;
 				-webkit-transition: all 0.6s ease;
 				-moz-transition: all 0.6s ease;
 				-o-transition: all 0.6s ease;
 				transition: all 0.6s ease;
 			}
-			p {
-				font-size: 15px;
-				line-height: 26px;
-			}
 		}
 		&:hover {
-
 			background: #941134;
-			
-			.service-icon{				
+			.service-icon{
 				i {
+					color: #FFF;
 					transition: all 0.5s ease;
-					color:#FFFFFF;
 					font-size: 54px;
 					line-height: 60px;
 					-webkit-transform: rotateY(360deg);
@@ -277,8 +270,8 @@ h1,h2,h3,h4,h5,h6 {
 					transform: rotateY(360deg);
 				}
 				h4 {
+					color: #FFF;
 					transition: color 0.5s ease;
-					color: #FFFFFF;
 				}
 			}
 		}

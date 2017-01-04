@@ -89,91 +89,91 @@ get_header(); ?>
               </div>
             </div>
 
-              
-              <div class="clearfix"></div>
-              <div class="spacer"></div>
 
-              <!-- Ways to Play --> 
+            <div class="clearfix"></div>
+            <div class="spacer"></div>
+
+            <!-- Ways to Play --> 
+            <div class="col-md-3">
+              <a class="box box--desc">                  
+                <h4 class="box--desc__title"><strong>Ways to Play</strong></h4>
+                <p>Here we take play very seriously. Each year we improve and add ways to play that the whole family will love. Join us to make the types of memories that last your family a lifetime.</p>
+              </a>
+            </div>
+            <div class="col-md-9">
+              <div class="col-md-4">
+                <a class="box">                      
+                  <div class="bg-img box--toys"></div>                    
+                  <div class="shadow"></div>
+                  <h5 class="title">Lake Toys</h5>                      
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a class="box">                      
+                  <div class="bg-img box--play"></div>                    
+                  <div class="shadow"></div>
+                  <h5 class="title">Playgrounds</h5>                      
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a class="box">                      
+                  <div class="bg-img box--mini"></div>                    
+                  <div class="shadow"></div>
+                  <h5 class="title">Mini Golf</h5>                      
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </div>
               <div class="col-md-3">
-                <a class="box box--desc">                  
-                  <h4 class="box--desc__title"><strong>Ways to Play</strong></h4>
-                  <p>Here we take play very seriously. Each year we improve and add ways to play that the whole family will love. Join us to make the types of memories that last your family a lifetime.</p>
+                <a class="box" href="/wp-content/uploads/2016/12/26.jpg"  alt="" data-lightbox="home">
+                  <div class="bg-img box--camp"></div>                    
+                  <div class="shadow"></div>
+                  <i class="fa fa-camera" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="col-md-9">
-                <div class="col-md-4">
-                  <a class="box">                      
-                    <div class="bg-img box--toys"></div>                    
-                    <div class="shadow"></div>
-                    <h5 class="title">Lake Toys</h5>                      
-                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a class="box">                      
-                    <div class="bg-img box--play"></div>                    
-                    <div class="shadow"></div>
-                    <h5 class="title">Playgrounds</h5>                      
-                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a class="box">                      
-                    <div class="bg-img box--mini"></div>                    
-                    <div class="shadow"></div>
-                    <h5 class="title">Mini Golf</h5>                      
-                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="col-md-3">
-                  <a class="box" href="/wp-content/uploads/2016/12/26.jpg"  alt="" data-lightbox="home">
-                    <div class="bg-img box--camp"></div>                    
-                    <div class="shadow"></div>
-                    <i class="fa fa-camera" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="col-md-9">
-                  <a class="box">                      
-                    <div class="bg-img box--hiking"></div>                    
-                    <div class="shadow"></div>
-                    <h5 class="title">Hiking Trails</h5>                      
-                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <a class="box">                  
-                  <div class="bg-img box--amen"></div>                  
+                <a class="box">                      
+                  <div class="bg-img box--hiking"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title">Amenities</h5>                  
+                  <h5 class="title">Hiking Trails</h5>                      
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
-              <div class="col-md-3">
-                <a href="/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg" class="box" data-lightbox="home">                              
-                  <div class="bg-img box--bag"></div>                  
-                  <div class="shadow"></div>                  
-                  <i class="fa fa-camera" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a href="/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg" class="box" data-lightbox="home">                  
-                  <div class="bg-img box--paint"></div>                  
-                  <div class="shadow"></div>
-                  <i class="fa fa-camera" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a class="box">                  
-                  <div class="bg-img box--pool"></div>                  
-                  <div class="shadow"></div>
-                  <h5 class="title">The Pool</h5>
-                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </a>
-              </div>
+            </div>
+            <div class="col-md-3">
+              <a class="box">                  
+                <div class="bg-img box--amen"></div>                  
+                <div class="shadow"></div>
+                <h5 class="title">Amenities</h5>                  
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg" class="box" data-lightbox="home">                              
+                <div class="bg-img box--bag"></div>                  
+                <div class="shadow"></div>                  
+                <i class="fa fa-camera" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg" class="box" data-lightbox="home">                  
+                <div class="bg-img box--paint"></div>                  
+                <div class="shadow"></div>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a class="box">                  
+                <div class="bg-img box--pool"></div>                  
+                <div class="shadow"></div>
+                <h5 class="title">The Pool</h5>
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </a>
+            </div>
 
-              <div class="clearfix"></div>
-              <div class="spacer"></div>
+            <div class="clearfix"></div>
+            <div class="spacer"></div>
             
             <div class="wtp__boxes">
               <div class="col-md-9">
@@ -201,68 +201,68 @@ get_header(); ?>
           <div class="spacer"></div>
 
           <!-- Ways to Stay -->
-          <div class="container text-xs-center">
-              <div class="service-boxes">
+          <div class="service-boxes row">
+            <div class="container">
+              <div class="row">
                 <div class="col-md-4 service-box">                  
+                  <div class="service-icon">
+                    <a href="">
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                      <h4>The Manor House</h4></a>
+                      <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
+                    </div>
+                  </div>
+                  <div class="col-md-4 service-box">                    
                     <div class="service-icon">
                       <a href="">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <h4>The Manor House</h4></a>
+                       <i class="fa fa-bed" aria-hidden="true"></i>
+                       <h4>Cabins</h4></a>
+                       <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
+                     </div>
+                   </div>
+                   <div class="col-md-4 service-box">                    
+                    <div class="service-icon">
+                      <a href="">
+                       <i class="fa fa-compass" aria-hidden="true"></i>
+                       <h4>Rent Our RV's</h4>
+                       <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button></a>
+                     </div>
+                   </div>
+
+                   <div class="clearfix"></div>
+                   <div class="spacer"></div>
+
+                   <div class="col-md-4 service-box">                    
+                    <div class="service-icon">
+                      <a href="/our-facility-2/">
+                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                        <h4>Tent Camping Sites</h4></a>
                         <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
                       </div>
                     </div>
-                  <div class="col-md-4 service-box">                    
+                    <div class="col-md-4 service-box">                      
                       <div class="service-icon">
                         <a href="">
-                         <i class="fa fa-bed" aria-hidden="true"></i>
-                         <h4>Cabins</h4></a>
-                         <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                       </div>
-                     </div>
-                   <div class="col-md-4 service-box">                    
-                      <div class="service-icon">
-                        <a href="">
-                         <i class="fa fa-compass" aria-hidden="true"></i>
-                         <h4>Rent Our RV's</h4>
-                         <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button></a>
-                       </div>
-                     </div>
-                 </div>
-
-                 <div class="spacer"></div>
-
-                 <div class="service-boxes">
-                  <div class="col-md-4 service-box">                    
-                      <div class="service-icon">
-                        <a href="/our-facility-2/">
-                          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-                          <h4>Tent Camping Sites</h4></a>
+                          <i class="fa fa-map-signs" aria-hidden="true"></i>
+                          <h4>RV Camping Sites</h4></a>
                           <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
                         </div>
                       </div>
-                    <div class="col-md-4 service-box">                      
-                        <div class="service-icon">
-                          <a href="">
-                            <i class="fa fa-map-signs" aria-hidden="true"></i>
-                            <h4>RV Camping Sites</h4></a>
-                            <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                          </div>
-                        </div>
                       <div class="col-md-4 service-box">                        
-                         <div class="service-icon">
-                          <a href="">
-                            <i class="fa fa-ticket" aria-hidden="true"></i>
-                            <h4>Day Pass</h4></a>
-                            <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                          </div>
+                       <div class="service-icon">
+                        <a href="">
+                          <i class="fa fa-ticket" aria-hidden="true"></i>
+                          <h4>Day Pass</h4></a>
+                          <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- end: Ways to Stay -->
-
+                
                 <div class="spacer"></div>
-                <div class="spacer"></div>
-
+                
                 <!-- Testimonials Slider -->
                 <section class="row">
                   <div class="parallax-window pw--home-testi" data-speed="0.8">
