@@ -8061,12 +8061,25 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%; }
 
 /* Home */
-.welcome .wtp__full-boxes .wtp--padding {
+.bg-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+
+.welcome .wtp__boxes .wtp_box--blue .shadow {
+  background: rgba(16, 108, 152, 0.9) !important; }
+
+.welcome .wtp__boxes .wtp--padding {
   padding-right: 15px !important; }
 
-.welcome .wtp__full-boxes a.box {
+.welcome .wtp__boxes .wtp--padding--left {
+  padding-left: 15px; }
+
+.welcome .wtp__boxes a.box {
   position: relative; }
-  .welcome .wtp__full-boxes a.box .title {
+  .welcome .wtp__boxes a.box .title {
     position: absolute;
     top: 25%;
     left: 0;
@@ -8076,13 +8089,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2.6rem;
     opacity: 1;
     transition: all 0.2s ease-in-out; }
-  .welcome .wtp__full-boxes a.box .shadow {
-    background: rgba(16, 108, 152, 0.8); }
-  .welcome .wtp__full-boxes a.box:hover .title {
+  .welcome .wtp__boxes a.box .shadow {
+    background: rgba(148, 17, 52, 0.9); }
+  .welcome .wtp__boxes a.box:hover .title {
     opacity: 0;
     transition: all 0.2s ease-in-out; }
-  .welcome .wtp__full-boxes a.box:hover .shadow {
-    background: rgba(16, 108, 152, 0.2); }
+  .welcome .wtp__boxes a.box:hover .shadow {
+    background: rgba(148, 17, 52, 0.25); }
 
 .welcome [class*="col"] {
   padding: 0; }
@@ -8152,7 +8165,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out; }
   .welcome a.box:hover .shadow {
-    background: rgba(241, 178, 14, 0.85);
+    background: rgba(241, 178, 14, 0.95);
     transition: all 0.2s ease-in-out; }
   .welcome a.box:hover .title {
     opacity: 0;
@@ -8164,11 +8177,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .welcome a.box--desc {
   height: 420px !important;
-  background: #222;
+  background: #F1B20E;
   color: #FFF;
-  padding: 35px 30px; }
+  padding: 45px 30px; }
   .welcome a.box--desc .box--desc__title {
-    font: 100 52px/50px "Raleway", sans-serif;
+    font: 100 55px/50px "Raleway", sans-serif;
     margin-bottom: 50px; }
 
 .welcome .box--upcoming {
@@ -8221,6 +8234,53 @@ h1, h2, h3, h4, h5, h6 {
   .owc-home p {
     font: normal 22px/30px "Raleway", sans-serif;
     color: #FFF; }
+
+.service-boxes {
+  text-align: center; }
+  .service-boxes .service-box {
+    display: inline-block;
+    text-align: center;
+    padding: 40px; }
+    .service-boxes .service-box .service-icon a {
+      text-decoration: none; }
+    .service-boxes .service-box .service-icon i {
+      display: inline-block;
+      font-size: 45px;
+      line-height: 60px;
+      color: #5f6273;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+    .service-boxes .service-box .service-icon h4 {
+      color: #5f6273;
+      font-size: 23px;
+      padding: 25px 0 5px;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+    .service-boxes .service-box .service-icon p {
+      font-size: 15px;
+      line-height: 26px; }
+    .service-boxes .service-box:hover {
+      background: #941134; }
+      .service-boxes .service-box:hover .service-icon i {
+        transition: all 0.5s ease;
+        color: #FFFFFF;
+        font-size: 54px;
+        line-height: 60px;
+        -webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        transform: rotateY(360deg); }
+      .service-boxes .service-box:hover .service-icon h4 {
+        transition: color 0.5s ease;
+        color: #FFFFFF; }
+
+.service-box:hover {
+  transition: background-color 0.5s ease;
+  background-color: #5f6273; }
 
 .btn-ghost {
   position: relative;
