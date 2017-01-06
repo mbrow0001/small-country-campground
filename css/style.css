@@ -8062,14 +8062,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 125px;
   z-index: -1; }
 
-.welcome .wtp__boxes .wtp_box--blue .shadow {
-  background: rgba(16, 108, 152, 0.9) !important; }
-
 .welcome .wtp__boxes .wtp--padding {
-  padding-right: 15px !important; }
+  padding-right: 2px !important; }
 
-.welcome .wtp__boxes .wtp--padding--left {
-  padding-left: 15px; }
+.welcome .wtp__boxes .wtp_box--blue .shadow {
+  background: rgba(16, 108, 152, 0.5) !important; }
 
 .welcome .wtp__boxes a.box {
   position: relative; }
@@ -8097,8 +8094,10 @@ h1, h2, h3, h4, h5, h6 {
 .welcome a.box {
   display: block;
   position: relative;
-  height: 210px;
+  height: 205px;
   margin: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
   background-color: #ececec;
   background-position: center;
   background-repeat: no-repeat;
@@ -8172,28 +8171,27 @@ h1, h2, h3, h4, h5, h6 {
 .welcome a.box--desc {
   height: 420px !important;
   background: #F1B20E;
-  color: #FFF;
+  color: #FFF !important;
   padding: 45px 30px; }
   .welcome a.box--desc .box--desc__title {
     font: 100 55px/50px "Raleway", sans-serif;
     margin-bottom: 50px; }
 
-.welcome a.box--video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-
-.welcome a.box--video i {
-  opacity: 1;
-  top: 40%; }
-
-.welcome a.box--video:focus i, .welcome a.box--video:active i, .welcome a.box--video:visited i {
-  opacity: 0;
-  z-index: -1; }
-
-.welcome a.box--video:focus .shadow, .welcome a.box--video:active .shadow, .welcome a.box--video:visited .shadow {
-  z-index: -1; }
+.welcome a.box--video {
+  overflow: hidden; }
+  .welcome a.box--video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .welcome a.box--video i {
+    opacity: 1;
+    top: 40%; }
+  .welcome a.box--video:focus i, .welcome a.box--video:active i, .welcome a.box--video:visited i {
+    opacity: 0;
+    z-index: -1; }
+  .welcome a.box--video:focus .shadow, .welcome a.box--video:active .shadow, .welcome a.box--video:visited .shadow {
+    z-index: -1; }
 
 .welcome .box--upcoming {
   background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg); }
@@ -8247,34 +8245,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF; }
 
 .service-boxes {
-  background: #EFEFEF;
   text-align: center; }
   .service-boxes .service-box {
     display: inline-block;
+    width: 100%;
     text-align: center;
-    padding: 40px; }
-    .service-boxes .service-box .service-icon {
-      color: #941134; }
-      .service-boxes .service-box .service-icon a {
-        color: #941134;
-        text-decoration: none; }
-      .service-boxes .service-box .service-icon i {
-        display: inline-block;
-        font-size: 45px;
-        line-height: 60px;
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.6s ease;
-        -moz-transition: all 0.6s ease;
-        -o-transition: all 0.6s ease;
-        transition: all 0.6s ease; }
-      .service-boxes .service-box .service-icon h4 {
-        padding: 25px 0 5px;
-        -webkit-transition: all 0.6s ease;
-        -moz-transition: all 0.6s ease;
-        -o-transition: all 0.6s ease;
-        transition: all 0.6s ease; }
+    padding: 40px;
+    background-color: #941134;
+    margin-bottom: 10px; }
+    .service-boxes .service-box .service-icon a {
+      color: #FFF;
+      text-decoration: none; }
+    .service-boxes .service-box .service-icon i {
+      display: inline-block;
+      font-size: 45px;
+      line-height: 60px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+    .service-boxes .service-box .service-icon h4 {
+      padding: 25px 0 5px;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
     .service-boxes .service-box:hover {
-      background: #941134; }
+      background: #FFF; }
       .service-boxes .service-box:hover .service-icon i {
         color: #FFF;
         transition: all 0.5s ease;
@@ -8482,7 +8480,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0;
     font-weight: bold; }
     .wrapper-navbar .head__contact p {
-      margin: 0; }
+      margin: 0;
+      font-family: "Raleway", sans-serif; }
     .wrapper-navbar .head__contact a {
       color: #F1B20E; }
     .wrapper-navbar .head__contact span {
@@ -8507,7 +8506,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 0; }
 
 .carousel-inner .carousel-item {
