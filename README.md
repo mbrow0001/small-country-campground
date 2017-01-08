@@ -1,4 +1,4 @@
-# Cyberbility Custom Starter Theme
+# Small Country Campground Theme
 
 ### Requirements
 * [Node](https://nodejs.org/en/) >= v4.x <br>
@@ -23,11 +23,3 @@
 |`/style.css` |				Placeholder file for WordPress <br>
 |`/sass/theme/theme.scss` |	Add basic sass styles <br>
 |`/js/custom.js` |			Add additional javascript
-
-## Included
-Scroll Reveal - [NPM](https://www.npmjs.com/package/scrollreveal) <br>
-FullPage.js  - [NPM](https://www.npmjs.com/package/fullpage.js) <br>
-Parallax.js  - [Github](https://github.com/pixelcog/parallax.js) <br>
-Masonry  - [Github](https://github.com/desandro/masonry) <br>
-Lightbox2 - [NPM](https://www.npmjs.com/package/lightbox2)
-
