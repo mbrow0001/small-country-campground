@@ -32,11 +32,14 @@ h1,h2,h3,h4,h5,h6 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 125px;
+	top: 10vh;
 	z-index: -1;
 }
 
 .welcome {
+	@include media-breakpoint-down(sm) {
+		padding: 0;
+	}
 	.wtp__boxes {
 		.wtp--padding { 
 			padding-right: 2px !important;	
@@ -91,7 +94,6 @@ h1,h2,h3,h4,h5,h6 {
 		background-size: cover;
 		transition: all 0.2s ease-in-out;
 		overflow: hidden;
-
 		i {
 			position: absolute;
 			top: 100%;
@@ -105,7 +107,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: 99;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.bg-img {
 			background-position: center;
 			background-size: cover;
@@ -114,7 +115,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: -1;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.gradient {
 			position: absolute;
 			top: 0;
@@ -123,7 +123,6 @@ h1,h2,h3,h4,h5,h6 {
 			width: 100%;
 			z-index: 2;
 		}
-
 		.shadow {
 			position: absolute;
 			background: rgba(0,0,0,0.2);
@@ -134,7 +133,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: 1;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.title {
 			position: absolute;
 			font: bold 20px/24px $font-two;
@@ -147,7 +145,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: 3;
 			transition: all 0.1s ease-in-out;
 		}
-
 		&:hover {
 			i {
 				top: 40%;
@@ -168,6 +165,9 @@ h1,h2,h3,h4,h5,h6 {
 				transition: all 0.4s ease-in-out;
 			}
 		}
+		@include media-breakpoint-down(sm) {
+			margin-left: 0;
+		}
 	}
 	a.box--tall {
 		height: 325px;
@@ -177,6 +177,7 @@ h1,h2,h3,h4,h5,h6 {
 		background: $brand-second;
 		color: #FFF !important;
 		padding:45px 30px;
+		margin-left: 0;
 		.box--desc__title {
 			font: 100 55px/50px $font-one;
 			margin-bottom: 50px;
@@ -239,14 +240,38 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+
+
+/* 
+*
+*	Ways to Play 
+*
+-------------------- */
+
+.wts {
+	background: $brand-primary;
+	.wts_title {
+	    color: #FFF;
+	    background: #7a0c29;
+	    padding: 20px;
+	    h1 {
+	    	font: 800 55px/50px "Raleway", sans-serif;
+	    }
+	}
+}
+
+
+
+
 .service-boxes {
 	text-align: center;
+	padding: 40px 0;
 	
 	.service-box {
 		display: inline-block;
 		width: 100%;
 		text-align: center;
-		padding: 40px;
+		padding: 20px;
 		background-color: #941134;
 		margin-bottom: 10px;
 
@@ -258,8 +283,9 @@ h1,h2,h3,h4,h5,h6 {
 
 			i {
 				display: inline-block;
-				font-size: 45px;
-				line-height: 60px;
+				font-size: 75px;
+				line-height: 80px;
+				margin-bottom: 20px;
 				transition: all 0.5s ease;
 				-webkit-transition: all 0.6s ease;
 				-moz-transition: all 0.6s ease;
@@ -275,13 +301,13 @@ h1,h2,h3,h4,h5,h6 {
 			}
 		}
 		&:hover {
-			background: #FFF;
+			background: #7a0c29;
 			.service-icon{
 				i {
 					color: #FFF;
 					transition: all 0.5s ease;
 					font-size: 54px;
-					line-height: 60px;
+					line-height: 80px;
 					-webkit-transform: rotateY(360deg);
 					-ms-transform: rotateY(360deg);
 					transform: rotateY(360deg);

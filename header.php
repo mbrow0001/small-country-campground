@@ -33,26 +33,28 @@
                         <div class="col-md-4">
                             <p>
                                 Ready to Book? 
+                                <br class="hidden-lg-up hidden-sm-down">
                                 <span><a href="#">Check Availability</a></span>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <p>
                                 Talk to Our Team 
+                                <br class="hidden-lg-up hidden-sm-down">
                                 <span><a href="tel:5409672431">(540) 967-2431</a></span>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <p>
                                 Email A Question 
+                                <br class="hidden-lg-up hidden-sm-down">
                                 <span><a href="mailto:camp@smallcountry.com">camp@smallcountry.com</a></span>
                             </p>
                         </div>
                     </div>
                 </div>
 
-            <nav class="navbar navbar-full container-fluid" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                <div class="navbar-header">
+                
                     <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
                     <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse" data-target=".mobile">
                         Menu
@@ -60,8 +62,9 @@
                     </button>
                     <!-- Your site title as branding in the menu -->
                     <!-- end custom logo -->
-                </div>
 
+
+            <nav class="navbar navbar-full container-fluid" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                 <!-- The WordPress Menu goes here -->
                 <?php wp_nav_menu(
                     array(
@@ -74,6 +77,7 @@
                     )
                 ); ?>
             </nav><!-- .site-navigation -->       
+
 
             <div class="container-fluid">
                 <div class="header__logo text-xs-center">

@@ -71,7 +71,7 @@ get_header(); ?>
           <section class="welcome container">
             <div class="wtp__boxes">
               <div class="col-md-6 col-sm-12 wtp--padding">
-                <a class="box box--tall"> 
+                <a class="ml-0 box box--tall"> 
                   <h2 class="title">Check Out <br> Upcoming Events at <br> the Campground</h2> 
                   <div class="bg-img box--upcoming"></div>
                   <button href="#" class="btn-ghost">Check Out Upcoming Events at the Campground</button>
@@ -120,14 +120,14 @@ get_header(); ?>
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
-            <div class="col-md-3">
-              <a class="box">                  
-                <div class="bg-img box--pool"></div>                  
-                <div class="shadow"></div>
-                <h5 class="title">The Pool</h5>
-                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-              </a>
-            </div>
+              <div class="col-md-3">
+                <a class="box">                  
+                  <div class="bg-img box--pool"></div>                  
+                  <div class="shadow"></div>
+                  <h5 class="title">The Pool</h5>
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </div>
               <div class="col-md-9">
                 <a class="box">                      
                   <div class="bg-img box--hiking"></div>                    
@@ -142,7 +142,7 @@ get_header(); ?>
             
             <div class="wtp__boxes">
               <div class="col-md-9">
-                <a class="box box--tall wtp_box--blue">                  
+                <a class="ml-0 box box--tall wtp_box--blue">                  
                   <div class="bg-img box--near"></div>                  
                   <div class="shadow"></div>
                   <h5 class="title">What's Near Us <br>
@@ -160,152 +160,157 @@ get_header(); ?>
                 </a>
               </div>
             </div>
-
           </section>
 
-          <div class="spacer"></div>
-
           <!-- Ways to Stay -->
-          <div class="service-boxes row">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">                  
-                  <div class="service-box">
-                  <div class="service-icon">
-                    <a href="">
-                      <i class="fa fa-home" aria-hidden="true"></i>
-                      <h4>The Manor House</h4></a>
-                      <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
+          <div class="wts row">
+            <div class="wts_title">
+              <h1 class="container">Ways to Stay</h1>
+            </div>
+            <div class="service-boxes">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">                  
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <a href="">
+                          <i class="fa fa-home" aria-hidden="true"></i>
+                          <h4>The Manor House</h4>
+                          <button type="button" class="btn-ghost">Check Availablity</button>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4">                    
                     <div class="service-box">
-                    <div class="service-icon">
-                      <a href="">
-                       <i class="fa fa-bed" aria-hidden="true"></i>
-                       <h4>Cabins</h4></a>
-                       <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                       </div>
+                      <div class="service-icon">
+                        <a href="">
+                         <i class="fa fa-bed" aria-hidden="true"></i>
+                         <h4>Cabins</h4>
+                         <button type="button" class="btn-ghost">Check Availablity</button>
+                       </a>
                      </div>
                    </div>
-                   <div class="col-md-4">                    
-                    <div class="service-box">
+                 </div>
+                 <div class="col-md-4">                    
+                  <div class="service-box">
                     <div class="service-icon">
                       <a href="">
                        <i class="fa fa-compass" aria-hidden="true"></i>
                        <h4>Rent Our RV's</h4>
-                       <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button></a>
-                       </div>
-                     </div>
+                       <button type="button" class="btn-ghost">Check Availablity</button>
+                     </a>
                    </div>
+                 </div>
+               </div>
 
-                   <div class="clearfix"></div>
+               <div class="clearfix"></div>
+               <div class="spacer"></div>
 
-                   <div class="col-md-4">                    
-                    <div class="service-box">
-                    <div class="service-icon">
-                      <a href="/our-facility-2/">
-                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-                        <h4>Tent Camping Sites</h4></a>
-                        <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="service-box">
-                      <div class="service-icon">
-                        <a href="">
-                          <i class="fa fa-map-signs" aria-hidden="true"></i>
-                          <h4>RV Camping Sites</h4></a>
-                          <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">                        
-                        <div class="service-box">
-                       <div class="service-icon">
-                        <a href="">
-                          <i class="fa fa-ticket" aria-hidden="true"></i>
-                          <h4>Day Pass</h4></a>
-                          <button type="button" class="btn btn-secondary btn-lg">Check Availablity</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+               <div class="col-md-4">                    
+                <div class="service-box">
+                  <div class="service-icon">
+                    <a href="/our-facility-2/">
+                      <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                      <h4>Tent Camping Sites</h4>
+                      <button type="button" class="btn-ghost">Check Availablity</button>
+                    </a>
                   </div>
-                  <div class="spacer"></div>
                 </div>
-                <!-- end: Ways to Stay -->
-
-                <!-- Testimonials Slider -->
-                <section class="row">
-                  <div class="parallax-window pw--home-testi" data-speed="0.8">
-                    <div class="parallax-slider text-md-center">
-                      <img src="/wp-content/uploads/2016/12/rainbow.jpg">
-                    </div>
-
-                    <div class="owl-carousel owl-theme owc-home">
-                      <div class="item">
-                        <p> 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
-                        </p>
-                        <p>
-                          Testimonail #1
-                        </p>
-                      </div>
-                      <div class="item">
-                        <p> 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
-                        </p>
-                        <p>
-                          Testimonail #2
-                        </p>
-                      </div>
-                      <div class="item">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
-                          <cite>Testimonail #3</cite>
-                        </p>
-                      </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-icon">
+                    <a href="">
+                      <i class="fa fa-map-signs" aria-hidden="true"></i>
+                      <h4>RV Camping Sites</h4>
+                      <button type="button" class="btn-ghost">Check Availablity</button></a>
                     </div>
                   </div>
-                </section>
-
-                <div class="spacer"></div>
-                
-                <!-- Blog Articles -->
-                <section class="container px-0 blog--home">
-                  <div id="owc-home--blog" class="owl-carousel owl-theme">
-                    <article class="item">
-                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
-                      <div class="blog__detail">
-                        <p class="date">January 10th, 2017</p>
-                        <h4 class="blog__title">Blog Title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
-                      </div>
-                    </article>
-                    <article class="item">
-                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
-                      <div class="blog__detail">
-                        <p class="date">January 11th, 2017</p>
-                        <h4 class="blog__title">Blog Title</h4>
-                        <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
-                    </article>
-                    <article class="item">
-                      <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
-                      <div class="blog__detail">
-                        <p class="date">January 15th, 2017</p>
-                        <h4 class="blog__title">Blog Title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
-                    </article>
+                </div>
+                <div class="col-md-4">                        
+                  <div class="service-box">
+                   <div class="service-icon">
+                    <a href="">
+                      <i class="fa fa-ticket" aria-hidden="true"></i>
+                      <h4>Day Pass</h4>
+                      <button type="button" class="btn-ghost">Check Availablity</button></a>
+                    </div>
                   </div>
-                </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end: Ways to Stay -->
+
+        <!-- Testimonials Slider -->
+        <section class="row">
+          <div class="parallax-window pw--home-testi" data-speed="0.8">
+            <div class="parallax-slider text-md-center">
+              <img src="/wp-content/uploads/2016/12/rainbow.jpg">
+            </div>
+
+            <div class="owl-carousel owl-theme owc-home">
+              <div class="item">
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                </p>
+                <p>
+                  Testimonail #1
+                </p>
+              </div>
+              <div class="item">
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                </p>
+                <p>
+                  Testimonail #2
+                </p>
+              </div>
+              <div class="item">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                  <cite>Testimonail #3</cite>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- Blog Articles -->
+        <section class="container px-0 blog--home">
+          <div id="owc-home--blog" class="owl-carousel owl-theme">
+            <article class="item">
+              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
+              <div class="blog__detail">
+                <p class="date">January 10th, 2017</p>
+                <h4 class="blog__title">Blog Title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
+              </div>
+            </article>
+            <article class="item">
+              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
+              <div class="blog__detail">
+                <p class="date">January 11th, 2017</p>
+                <h4 class="blog__title">Blog Title</h4>
+                <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
+              </article>
+              <article class="item">
+                <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
+                <div class="blog__detail">
+                  <p class="date">January 15th, 2017</p>
+                  <h4 class="blog__title">Blog Title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
+                </article>
+              </div>
+            </section>
 
 
-              </main><!-- #main -->
-            </div><!-- #primary -->
-          </div><!-- .row -->
-        </div><!-- Container end -->
-      </div><!-- Wrapper end -->
+          </main><!-- #main -->
+        </div><!-- #primary -->
+      </div><!-- .row -->
+    </div><!-- Container end -->
+  </div><!-- Wrapper end -->
 
-      <?php get_footer(); ?>
+  <?php get_footer(); ?>

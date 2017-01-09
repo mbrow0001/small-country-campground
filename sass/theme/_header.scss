@@ -1,17 +1,24 @@
 .wrapper-navbar {
 	text-align: center;
 
+	.navbar-toggler {
+		position: relative;
+		width: 100% !important;
+		min-width: 200px;
+		text-align: center;
+		background: none;
+	}
+
 	.navbar {
 	    text-align: center;
 	    margin: auto;
-	    padding: 60px 0 100px;
-
-		.navbar-header {
-			.navbar-toggler {
-				min-width: 200px;
-				text-align: center;
-				background: none;
-			}
+	    padding: 0;
+	    position: absolute;
+	    width: 100%;
+	    top: 120px;
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			top:0;
 		}
 
 		.mobile {
@@ -46,6 +53,15 @@
 							font-weight: 400;
 						}
 					}
+					@include media-breakpoint-down(md) {
+						display: block;
+						&:nth-child(4) {
+							margin-right: auto;
+						}
+					    + .nav-item {
+					    	margin-left: 0;
+					    }					
+					}
 				}
 				.dropdown-menu {
 					margin: 12px 0 0;
@@ -71,39 +87,57 @@
 							}
 						}
 					}
-					.nav-item + .nav-item {
-						margin-left: 0;
-					}
 				}
 		    }
 		}
 	}
 
 	.header__logo {
-	    position: absolute;
+	    position: relative;
 	    width: 100%;
-	    top: 60px;
-	    left: 0;
-	    right: 0;
 		img {
 			max-height: 180px;
+		}
+		@include media-breakpoint-down(md) {
+			img {
+				max-height: 150px;
+			}
 		}
 	}
 	
 	.head__contact {
 		background-color: $brand-fourth;
 		color: #FFF;
+		text-align: center;
 		padding: 15px 0;
 		font-weight: bold;
 		p {
 			margin: 0;
-			font-family: $font-one;
+			font-family: $font-two;
 		}
 		a {
 			color: $brand-second;
 		}
 		span {
 			padding-left: 15px;
+		}
+
+		@include media-breakpoint-down(md) {
+			p {
+				font-size: 14px;
+			}
+			span {
+				padding-left: 0;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			p {
+				font-size: 12px;
+				text-align: left;
+				span {
+					float: right;
+				}
+			}
 		}
 	}
 	.head__address {
