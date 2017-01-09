@@ -28,30 +28,38 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Home */
 
+
+
+.slider-shadow {
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    margin-left: -15px;
+}
+
 .bg-shape {	
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 125px;
+	top: 10vh;
 	z-index: -1;
 }
 
 .welcome {
-
+	@include media-breakpoint-down(sm) {
+		padding: 0;
+	}
 	.wtp__boxes {
-
+		.wtp--padding { 
+			padding-right: 2px !important;	
+		}
 		.wtp_box--blue {
 			.shadow {
-				background: rgba(16, 108, 152,0.9) !important;
+				background: rgba(16, 108, 152,0.5) !important;
 			}
 		}
-
-		.wtp--padding { padding-right: 15px !important;	}
-		.wtp--padding--left { padding-left: 15px; }
-
 		a.box {
 			position: relative;
-
 			.title {
 				position: absolute;
 				top: 25%;
@@ -63,11 +71,9 @@ h1,h2,h3,h4,h5,h6 {
 				opacity: 1;
 				transition: all 0.2s ease-in-out;
 			}
-
 			.shadow {
 				background: rgba(148, 17, 52,0.9);
 			}
-
 			&:hover{
 				.title {
 					opacity: 0;
@@ -87,15 +93,16 @@ h1,h2,h3,h4,h5,h6 {
 	a.box {
 		display: block;
 		position: relative;
-		height: 210px;
+		height: 205px;
 		margin: 0;
+		margin-left: 10px;
+		margin-bottom: 10px;
 		background-color: #ececec;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		transition: all 0.2s ease-in-out;
 		overflow: hidden;
-
 		i {
 			position: absolute;
 			top: 100%;
@@ -109,7 +116,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: 99;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.bg-img {
 			background-position: center;
 			background-size: cover;
@@ -118,7 +124,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: -1;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.gradient {
 			position: absolute;
 			top: 0;
@@ -127,7 +132,6 @@ h1,h2,h3,h4,h5,h6 {
 			width: 100%;
 			z-index: 2;
 		}
-
 		.shadow {
 			position: absolute;
 			background: rgba(0,0,0,0.2);
@@ -138,7 +142,6 @@ h1,h2,h3,h4,h5,h6 {
 			z-index: 1;
 			transition: all 0.2s ease-in-out;
 		}
-
 		.title {
 			position: absolute;
 			font: bold 20px/24px $font-two;
@@ -150,8 +153,11 @@ h1,h2,h3,h4,h5,h6 {
 			opacity: 1;
 			z-index: 3;
 			transition: all 0.1s ease-in-out;
+			&.title--cap {
+				font-family: $font-one !important;
+				text-transform: uppercase !important;
+			}
 		}
-
 		&:hover {
 			i {
 				top: 40%;
@@ -172,6 +178,9 @@ h1,h2,h3,h4,h5,h6 {
 				transition: all 0.4s ease-in-out;
 			}
 		}
+		@include media-breakpoint-down(sm) {
+			margin-left: 0;
+		}
 	}
 	a.box--tall {
 		height: 325px;
@@ -179,14 +188,19 @@ h1,h2,h3,h4,h5,h6 {
 	a.box--desc {
 		height: 420px !important;
 		background: $brand-second;
-		color: #FFF;
+		color: #FFF !important;
 		padding:45px 30px;
+		margin-left: 0;
 		.box--desc__title {
-			font: 100 55px/50px $font-one;
+			font: 900 55px/55px $font-one;
 			margin-bottom: 50px;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 20px;
 		}
 	}
 	a.box--video {
+		overflow: hidden;
 		iframe {
 			position: absolute;
 			top: 0;
@@ -209,22 +223,23 @@ h1,h2,h3,h4,h5,h6 {
 			}
 		}
 	}
-
-	.box--upcoming 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg) }
-	.box--youtube 	{ background-image: url() }
-	.box--toys 		{ background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg) }
-	.box--play 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg) }
-	.box--mini 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg) }
-	.box--camp		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg) }
-	.box--hiking 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg) }
-	.box--amen 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg) }
-	.box--bag 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg) }
-	.box--paint 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg) }
-	.box--pool 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg) }
-	.box--near		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
-	.box--camp2		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
-
 }
+
+// Home Page - Ways to Play Backgrounds
+.box--upcoming 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg) }
+.box--youtube 	{ background-image: url() }
+.box--toys 		{ background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg) }
+.box--play 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg) }
+.box--mini 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg) }
+.box--camp		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg) }
+.box--hiking 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg) }
+.box--amen 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg) }
+.box--bag 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg) }
+.box--paint 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg) }
+.box--pool 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg) }
+.box--near		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
+.box--camp2		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
+
 
 .pw--home-testi {
 	background: rgba(0,0,0,0.7);
@@ -242,26 +257,52 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+
+
+/* 
+*
+*	Ways to Play 
+*
+-------------------- */
+
+.wts {
+	background: $brand-primary;
+	.wts_title {
+	    color: #FFF;
+	    background: #7a0c29;
+	    padding: 20px;
+	    h1 {
+	    	font: 800 55px/50px "Raleway", sans-serif;
+	    }
+	}
+}
+
+
+
+
 .service-boxes {
-	background: $light;
 	text-align: center;
+	padding: 40px 0;
 	
 	.service-box {
 		display: inline-block;
+		width: 100%;
 		text-align: center;
-		padding: 40px;
+		padding: 20px;
+		background-color: #941134;
+		margin-bottom: 10px;
 
 		.service-icon {
-			color: $brand-primary;
 			a {
-				color: $brand-primary;
+				color: #FFF;
 				text-decoration: none;
 			}
 
 			i {
 				display: inline-block;
-				font-size: 45px;
-				line-height: 60px;
+				font-size: 75px;
+				line-height: 80px;
+				margin-bottom: 20px;
 				transition: all 0.5s ease;
 				-webkit-transition: all 0.6s ease;
 				-moz-transition: all 0.6s ease;
@@ -277,13 +318,13 @@ h1,h2,h3,h4,h5,h6 {
 			}
 		}
 		&:hover {
-			background: #941134;
+			background: #7a0c29;
 			.service-icon{
 				i {
 					color: #FFF;
 					transition: all 0.5s ease;
 					font-size: 54px;
-					line-height: 60px;
+					line-height: 80px;
 					-webkit-transform: rotateY(360deg);
 					-ms-transform: rotateY(360deg);
 					transform: rotateY(360deg);

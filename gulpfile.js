@@ -71,6 +71,7 @@ var browserSyncOptions = {
     port:      3060,
     open:      false,
     notify:    false,
+    online:    true
 };
 
 gulp.task('browser-sync', function() {
