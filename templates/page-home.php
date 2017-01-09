@@ -63,6 +63,9 @@ get_header(); ?>
             </div>
           </div>
           <!-- end: Slider -->
+          <div class="slider-shadow">
+            <img src="http://cycat4.com/wp-content/uploads/2017/01/shadow-bottom.png">
+          </div>
 
           <div class="spacer"></div>
 
@@ -89,18 +92,18 @@ get_header(); ?>
             <div class="clearfix"></div>
 
             <!-- Ways to Play --> 
-            <div class="col-md-3">
+            <div class="col-lg-3 col-sm-4">
               <a class="box box--desc">                  
-                <h4 class="box--desc__title"><strong>Ways to Play</strong></h4>
+                <h4 class="box--desc__title">Ways to Play</h4>
                 <p>Here we take play very seriously. Each year we improve and add ways to play that the whole family will love. Join us to make the types of memories that last your family a lifetime.</p>
               </a>
             </div>
-            <div class="col-md-9">
+            <div class="col-lg-9 col-md-8">
               <div class="col-md-4">
                 <a class="box">                      
                   <div class="bg-img box--toys"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title">Lake Toys</h5>                      
+                  <h5 class="title title--cap">Lake Toys</h5>                      
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -108,7 +111,7 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--play"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title">Playgrounds</h5>                      
+                  <h5 class="title title--cap">Playgrounds</h5>                      
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -116,15 +119,15 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--mini"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title">Mini Golf</h5>                      
+                  <h5 class="title title--cap">Mini Golf</h5>                      
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="col-md-3">
                 <a class="box">                  
-                  <div class="bg-img box--pool"></div>                  
+                  <div class="bg-img box--pool"></div>
                   <div class="shadow"></div>
-                  <h5 class="title">The Pool</h5>
+                  <h5 class="title title--cap">The Pool</h5>
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -132,7 +135,7 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--hiking"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title">Hiking Trails</h5>                      
+                  <h5 class="title title--cap">Hiking Trails</h5>                      
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>

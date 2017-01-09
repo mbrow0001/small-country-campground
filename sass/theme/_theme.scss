@@ -28,6 +28,15 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Home */
 
+
+
+.slider-shadow {
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    margin-left: -15px;
+}
+
 .bg-shape {	
 	position: absolute;
 	left: 0;
@@ -144,6 +153,10 @@ h1,h2,h3,h4,h5,h6 {
 			opacity: 1;
 			z-index: 3;
 			transition: all 0.1s ease-in-out;
+			&.title--cap {
+				font-family: $font-one !important;
+				text-transform: uppercase !important;
+			}
 		}
 		&:hover {
 			i {
@@ -179,8 +192,11 @@ h1,h2,h3,h4,h5,h6 {
 		padding:45px 30px;
 		margin-left: 0;
 		.box--desc__title {
-			font: 100 55px/50px $font-one;
+			font: 900 55px/55px $font-one;
 			margin-bottom: 50px;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 20px;
 		}
 	}
 	a.box--video {
@@ -207,22 +223,23 @@ h1,h2,h3,h4,h5,h6 {
 			}
 		}
 	}
-
-	.box--upcoming 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg) }
-	.box--youtube 	{ background-image: url() }
-	.box--toys 		{ background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg) }
-	.box--play 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg) }
-	.box--mini 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg) }
-	.box--camp		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg) }
-	.box--hiking 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg) }
-	.box--amen 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg) }
-	.box--bag 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg) }
-	.box--paint 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg) }
-	.box--pool 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg) }
-	.box--near		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
-	.box--camp2		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
-
 }
+
+// Home Page - Ways to Play Backgrounds
+.box--upcoming 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg) }
+.box--youtube 	{ background-image: url() }
+.box--toys 		{ background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg) }
+.box--play 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg) }
+.box--mini 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg) }
+.box--camp		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg) }
+.box--hiking 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg) }
+.box--amen 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg) }
+.box--bag 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg) }
+.box--paint 	{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg) }
+.box--pool 		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg) }
+.box--near		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
+.box--camp2		{ background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
+
 
 .pw--home-testi {
 	background: rgba(0,0,0,0.7);
