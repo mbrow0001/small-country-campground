@@ -26,16 +26,26 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
+
+
+/*
+*
+*	Navbar Affix
+*
+----------------------- */
+.affix {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+
+
 /* Home */
 
-
-
-.slider-shadow {
-    position: absolute;
-    top: 70vh;
-    width: 100%;
-    margin-left: -15px;
-}
 
 .bg-shape {	
 	position: absolute;

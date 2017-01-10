@@ -5,7 +5,7 @@
 		bottom: 0;
 		right: 0;
 		left: 0;
-		background-color: rgba(0,0,0,0.3);
+		background-color: rgba(0,0,0,0.5);
 		z-index: 0;
 	}
 	.carousel-item {
@@ -15,7 +15,7 @@
 		.cap {
 			position: absolute;
 			z-index: 999;
-			top: 30%;
+			top: 25%;
 			left: 0;
 			right: 0;
 			margin: auto;
@@ -23,19 +23,28 @@
 			text-align: center;
 
 			h1 {
-				font-size: 55px;
 				font-weight:600;
+				font-size: 65px;
+				line-height: 85px;
 				color: #FFF;
 			}
 			p {
 				color: #FFF;
 				padding-top: 40px;
-				max-width: 60%;
-				font-size: 18px;
+				max-width: 80%;
+				font-size: 24px;
 				margin: auto;
 			    -webkit-transition: opacity 2s;
 			    transition: opacity 2s;
 			}
 		}
 	}
+}
+
+
+.slider-shadow {
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    margin-left: -15px;
 }

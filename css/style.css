@@ -8054,13 +8054,19 @@ h1, h2, h3, h4, h5, h6 {
 .header-img img {
   width: 100%; }
 
-/* Home */
-.slider-shadow {
-  position: absolute;
-  top: 70vh;
-  width: 100%;
-  margin-left: -15px; }
+/*
+*
+*	Navbar Affix
+*
+----------------------- */
+.affix {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 
+/* Home */
 .bg-shape {
   position: absolute;
   left: 0;
@@ -8441,12 +8447,22 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     background: none; }
   .wrapper-navbar .navbar {
+    position: absolute;
     text-align: center;
     margin: auto;
     padding: 0;
-    position: absolute;
     width: 100%;
-    top: 120px; }
+    top: 70px;
+    border-radius: 0;
+    -webkit-transition: background 0.3s ease-out;
+    -moz-transition: background 0.3s ease-out;
+    -o-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out; }
+    .wrapper-navbar .navbar.affix {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px 0; }
+      .wrapper-navbar .navbar.affix .mobile #main-menu .nav-item:nth-child(4) {
+        margin-right: 10px; }
     @media (max-width: 1199px) {
       .wrapper-navbar .navbar {
         position: relative;
@@ -8468,14 +8484,14 @@ h1, h2, h3, h4, h5, h6 {
             color: #4B18A4;
             padding-bottom: 5px;
             border-bottom: 2px solid #4B18A4; }
-          .wrapper-navbar .navbar .mobile #main-menu .nav-item > .nav-link {
-            text-transform: uppercase;
-            color: #222222;
-            font-size: 16px; }
           .wrapper-navbar .navbar .mobile #main-menu .nav-item + .nav-item {
             margin-left: 1.5rem; }
             .wrapper-navbar .navbar .mobile #main-menu .nav-item + .nav-item a {
               font-weight: 400; }
+          .wrapper-navbar .navbar .mobile #main-menu .nav-item > .nav-link {
+            text-transform: uppercase;
+            color: #222222;
+            font-size: 16px; }
           @media (max-width: 991px) {
             .wrapper-navbar .navbar .mobile #main-menu .nav-item {
               display: block; }
@@ -8505,7 +8521,8 @@ h1, h2, h3, h4, h5, h6 {
                 color: #EFEFEF; }
   .wrapper-navbar .header__logo {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    height: 200px; }
     .wrapper-navbar .header__logo img {
       max-height: 180px; }
     @media (max-width: 991px) {
@@ -8515,11 +8532,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #106C98;
     color: #FFF;
     text-align: center;
-    padding: 15px 0;
-    font-weight: bold; }
+    padding: 15px 0; }
     .wrapper-navbar .head__contact p {
-      margin: 0;
-      font-family: "Cutive", serif; }
+      font-family: "Cutive", serif;
+      font-size: 0.8rem;
+      margin: 0; }
     .wrapper-navbar .head__contact a {
       color: #F1B20E; }
     .wrapper-navbar .head__contact span {
@@ -8555,7 +8572,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0; }
 
 .carousel-inner .carousel-item {
@@ -8565,24 +8582,31 @@ h1, h2, h3, h4, h5, h6 {
   .carousel-inner .carousel-item .cap {
     position: absolute;
     z-index: 999;
-    top: 30%;
+    top: 25%;
     left: 0;
     right: 0;
     margin: auto;
     max-width: 60%;
     text-align: center; }
     .carousel-inner .carousel-item .cap h1 {
-      font-size: 55px;
       font-weight: 600;
+      font-size: 65px;
+      line-height: 85px;
       color: #FFF; }
     .carousel-inner .carousel-item .cap p {
       color: #FFF;
       padding-top: 40px;
-      max-width: 60%;
-      font-size: 18px;
+      max-width: 80%;
+      font-size: 24px;
       margin: auto;
       -webkit-transition: opacity 2s;
       transition: opacity 2s; }
+
+.slider-shadow {
+  position: absolute;
+  top: 70vh;
+  width: 100%;
+  margin-left: -15px; }
 
 /* Featured Header Template Styles */
 .header-img {

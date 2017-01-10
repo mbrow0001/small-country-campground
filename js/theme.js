@@ -5441,4 +5441,33 @@ jQuery(document).ready(function($) {
     }
   });
 
+  // Bootstrap 3 Navbar Affix
+    var toggleAffix = function(affixElement, wrapper, scrollElement) {
+
+    var height = affixElement.outerHeight(),
+        top = 500;
+    if (scrollElement.scrollTop() >= top){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+
+  };
+
+
+  $('[data-toggle="affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, wrapper, $(this));
+    });
+
+    // init
+    toggleAffix(ele, wrapper, $(window));
+  });
+
 }); // end Jquery
