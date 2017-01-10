@@ -129,10 +129,10 @@ jQuery(document).ready(function($) {
     margin:0,
     responsive:{
         0:{
-            items:2
+            items:1
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:3
@@ -140,4 +140,75 @@ jQuery(document).ready(function($) {
     }
   });
 
+  // Bootstrap 3 Navbar Affix
+    var toggleAffix = function(affixElement, wrapper, scrollElement) {
+
+    var height = affixElement.outerHeight(),
+        top = 500;
+    if (scrollElement.scrollTop() >= top){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+
+  };
+
+
+  $('[data-toggle="affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, wrapper, $(this));
+    });
+
+    // init
+    toggleAffix(ele, wrapper, $(window));
+  });
+
+
 }); // end Jquery
+
+
+
+       // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '108%',
+          width: '108%',
+          playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 0,
+                    enablejsapi: 1,
+                    showinfo: 0,
+                    autohide: 1,
+                    modestbranding: 1,
+                    rel: 0,
+                    vq: 'hd1080'},
+          videoId: 'DBKJImEUURA',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.mute();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
