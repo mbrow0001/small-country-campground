@@ -8050,25 +8050,6 @@ h1, h2, h3, h4, h5, h6 {
 .shadow--blue {
   background: rgba(16, 108, 152, 0.6) !important; }
 
-.wrapper-navbar {
-  position: relative;
-  z-index: 999; }
-
-.header-img img {
-  width: 100%; }
-
-/*
-*
-*	Navbar Affix
-*
------------------------ */
-.affix {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-
 .btn-ghost {
   display: inline-block;
   position: relative;
@@ -8176,7 +8157,24 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+.header-img img {
+  width: 100%; }
+
+/*
+*
+*   Navbar Affix
+*
+----------------------- */
+.affix {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
 .wrapper-navbar {
+  position: relative;
+  z-index: 999;
   text-align: center; }
   .wrapper-navbar .navbar-toggler {
     position: relative;
@@ -8211,7 +8209,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         display: inline-block; }
         .wrapper-navbar .navbar .mobile #main-menu .current_page_item > a {
-          font-weight: 900 !important;
           color: #4B18A4 !important; }
         .wrapper-navbar .navbar .mobile #main-menu .nav-item {
           float: none;
@@ -8414,7 +8411,8 @@ h1, h2, h3, h4, h5, h6 {
     top: 83.5%;
     width: 100%;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    z-index: 999; }
     .blog--home #owc-home--blog .owl-nav div {
       background: none;
       font-size: 60px;
@@ -8651,8 +8649,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wts .wts_title {
   color: #941134;
-  padding: 20px;
-  margin-top: 80px; }
+  margin-top: 40px; }
   .wts .wts_title h1 {
     font: 100 55px/50px "Raleway", sans-serif; }
 

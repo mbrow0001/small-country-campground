@@ -67,7 +67,7 @@ var browserSyncWatchFiles = [
 ];
 
 var browserSyncOptions = {
-    proxy: "smallcountry.dev",
+    proxy: "country.dev",
     port:      3060,
     open:      true,
     notify:    false,
