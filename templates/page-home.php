@@ -32,7 +32,7 @@ get_header(); ?>
                   <div class="cap">
                     <h1 class="animate fadeIn text-sm-center">Welcome to Small Country Campground</h1>
                     <p class="animate fadeIn">Join the Small Country Campground family <br> where life long memories are made</p>
-                    <a href="#" class="btn btn-ghost">Read Our Story</a>
+                    <a href="/our-story" class="btn btn-ghost">Read Our Story</a>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -71,6 +71,11 @@ get_header(); ?>
           <div class="spacer"></div>
 
           <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/background.png">
+          <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
+              top: 172vh;
+          "><img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
+              top: 209vh;
+          ">
 
           <section class="welcome container">
             <div class="wtp__boxes">
@@ -84,7 +89,7 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-md-6 col-sm-12">
-                <a href="#vid" class="box box--tall box--video">                   
+                <a href="#vid" class="box box--tall box--video">              
                   <div class="shadow--blue"></div>               
                   <div class="bg-img box--youtube"></div>
                   <div id="player"></div>
@@ -106,7 +111,7 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--toys"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title title--cap">Lake Toys</h5>                      
+                  <h5 class="title title--cap">Lake Toys</h5>                 
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -114,8 +119,7 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--play"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title title--cap">Playgrounds</h5>                      
-                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                  <h5 class="title title--cap">Playgrounds</h5>                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="col-md-4">
@@ -146,6 +150,7 @@ get_header(); ?>
 
             <div class="clearfix"></div>
             
+            <!-- What's Near Us -->
             <div class="wtp__boxes">
               <div class="col-md-9">
                 <a class="ml-0 box box--tall">                  
@@ -179,7 +184,7 @@ get_header(); ?>
                   <div class="col-md-4">                  
                     <div class="service-box">
                       <div class="service-icon">
-                        <a href="">
+                        <a href="/ways-to-stay/the-manor-house/">
                           <i class="fa fa-home" aria-hidden="true"></i>
                           <h4>The Manor House</h4>
                           <button type="button" class="btn-ghost">Check Availablity</button>
@@ -190,7 +195,7 @@ get_header(); ?>
                   <div class="col-md-4">                    
                     <div class="service-box">
                       <div class="service-icon">
-                        <a href="">
+                        <a href="/ways-to-stay/park-model-cabin-style/">
                          <i class="fa fa-bed" aria-hidden="true"></i>
                          <h4>Cabins</h4>
                          <button type="button" class="btn-ghost">Check Availablity</button>
@@ -201,7 +206,7 @@ get_header(); ?>
                  <div class="col-md-4">                    
                   <div class="service-box">
                     <div class="service-icon">
-                      <a href="">
+                      <a href="#">
                        <i class="fa fa-compass" aria-hidden="true"></i>
                        <h4>Rent Our RV's</h4>
                        <button type="button" class="btn-ghost">Check Availablity</button>
@@ -216,7 +221,7 @@ get_header(); ?>
                <div class="col-md-4">                    
                 <div class="service-box">
                   <div class="service-icon">
-                    <a href="/our-facility-2/">
+                    <a href="/ways-to-stay/sites-for-your-tent/">
                       <i class="fa fa-free-code-camp" aria-hidden="true"></i>
                       <h4>Tent Camping Sites</h4>
                       <button type="button" class="btn-ghost">Check Availablity</button>
@@ -227,7 +232,7 @@ get_header(); ?>
               <div class="col-md-4">
                 <div class="service-box">
                   <div class="service-icon">
-                    <a href="">
+                    <a href="/ways-to-stay/camper-rv-rentals/">
                       <i class="fa fa-map-signs" aria-hidden="true"></i>
                       <h4>RV Camping Sites</h4>
                       <button type="button" class="btn-ghost">Check Availablity</button></a>
@@ -254,8 +259,14 @@ get_header(); ?>
         <!-- Blog Articles -->
         <section class="container px-0 blog--home">
           <div id="owc-home--blog" class="owl-carousel owl-theme">
-            <article class="item">
-              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt=""></a>
+
+        <?php echo do_shortcode('[su_posts template="templates/su-blog-home.php"]') ?>
+
+           <!--  <article class="item">
+              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/IMG_0770.jpg)" alt="">
+                <div class="shadow"></div>      
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </a>
               <div class="blog__detail">
                 <p class="date">January 10th, 2017</p>
                 <h4 class="blog__title">Blog Title</h4>
@@ -263,25 +274,31 @@ get_header(); ?>
               </div>
             </article>
             <article class="item">
-              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt=""></a>
+              <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/13620272_1148329961877250_5335866865786206549_n.jpg)" alt="">                
+                <div class="shadow"></div>      
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </a>
               <div class="blog__detail">
                 <p class="date">January 11th, 2017</p>
                 <h4 class="blog__title">Blog Title</h4>
                 <p>Tempora commodi, ad iusto, dolore dolorem sint laborum facere itaque hic sit explicabo maxime culpa, eos. </p>                        
               </article>
               <article class="item">
-                <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt=""></a>
+                <a href="#" class="blog__img" style="background-image: url(/wp-content/uploads/2016/12/P4112482.jpg)" alt="">               
+                  <div class="shadow"></div>      
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
                 <div class="blog__detail">
                   <p class="date">January 15th, 2017</p>
                   <h4 class="blog__title">Blog Title</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores consequatur perferendis minima nam eveniet quos. </p>                        
-                </article>
+                </article> -->
               </div>
             </section>
 
             <div class="spacer"></div>
 
-            
+
         <!-- Testimonials Slider -->
         <section class="row">
           <div class="parallax-window pw--home-testi" data-speed="0.8">
