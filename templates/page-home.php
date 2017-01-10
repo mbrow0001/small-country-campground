@@ -119,7 +119,8 @@ get_header(); ?>
                 <a class="box">                      
                   <div class="bg-img box--play"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title title--cap">Playgrounds</h5>                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                  <h5 class="title title--cap">Playgrounds</h5>                
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="col-md-4">
