@@ -18,31 +18,3 @@ h1,h2,h3,h4,h5,h6 {
 .shadow--blue {
 	background: rgba(16, 108, 152,0.6) !important;
 }
-
-.wrapper-navbar {
-	position: relative;
-	z-index: 999;
-}
-
-.header-img {
-	img { 
-		width: 100%;
-	}
-}
-
-
-
-/*
-*
-*	Navbar Affix
-*
------------------------ */
-.affix {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-

@@ -1,4 +1,29 @@
+.header-img {
+    img { 
+        width: 100%;
+    }
+}
+
+
+
+/*
+*
+*   Navbar Affix
+*
+----------------------- */
+.affix {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+
 .wrapper-navbar {
+    position: relative;
+    z-index: 999;
 	text-align: center;
 
 	.navbar-toggler {
@@ -39,7 +64,6 @@
 				width: 100%;
 				display: inline-block;
 				.current_page_item > a {
-					font-weight: 900 !important;
 					color: $brand-third !important;
 				}
 				.nav-item {

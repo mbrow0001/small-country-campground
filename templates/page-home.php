@@ -72,10 +72,10 @@ get_header(); ?>
 
           <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/background.png">
           <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
-              top: 172vh;
-          "><img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
-              top: 209vh;
+              top: 210vh;
+              z-index:-1;
           ">
+          <!-- <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="top: 209vh;"> -->
 
           <section class="welcome container">
             <div class="wtp__boxes">
@@ -309,23 +309,23 @@ get_header(); ?>
             <div class="owl-carousel owl-theme owc-home">
               <div class="item">
                 <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                  My granddaughters and I had a wonderful weekend at your campground. There was never a dull moment! The girls were entertained and had a blast the entire weekend. The cabin was clean, comfortable and had all the conveniences that Grandmother needed. Thank you and we will definitely be back to camp again. 
                 </p>
                 <p>
-                  Testimonail #1
+                  Brenda
                 </p>
               </div>
               <div class="item">
                 <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                  Had a great time this weekend! Thanks for all the kids stuff you do!! We only live 10 minutes away but love to camp with you guys several times a year!
                 </p>
                 <p>
-                  Testimonail #2
+                  Donna
                 </p>
               </div>
               <div class="item">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
-                  <cite>Testimonail #3</cite>
+                <p>What a great place to stay. We rented the Flicker camper. Very clean and comfortable. Kids loved fishing in the lake. Tammy and Brian made sure we were comfortable and enjoying our stay.
+                  <cite>Sue</cite>
                 </p>
               </div>
             </div>
