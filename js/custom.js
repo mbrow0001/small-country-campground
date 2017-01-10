@@ -169,4 +169,46 @@ jQuery(document).ready(function($) {
     toggleAffix(ele, wrapper, $(window));
   });
 
+
 }); // end Jquery
+
+
+
+       // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '108%',
+          width: '108%',
+          playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 0,
+                    enablejsapi: 1,
+                    showinfo: 0,
+                    autohide: 1,
+                    modestbranding: 1,
+                    rel: 0,
+                    vq: 'hd1080'},
+          videoId: 'DBKJImEUURA',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.mute();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }

@@ -8047,6 +8047,9 @@ h1, h2, h3, h4, h5, h6 {
 .spacer {
   height: 40px; }
 
+.shadow--blue {
+  background: rgba(16, 108, 152, 0.6) !important; }
+
 .wrapper-navbar {
   position: relative;
   z-index: 999; }
@@ -8065,271 +8068,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   z-index: 1030; }
-
-/* Home */
-.bg-shape {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 10vh;
-  z-index: -1; }
-
-@media (max-width: 767px) {
-  .welcome {
-    padding: 0; } }
-
-.welcome .wtp__boxes .wtp--padding {
-  padding-right: 2px !important; }
-
-.welcome .wtp__boxes .wtp_box--blue .shadow {
-  background: rgba(16, 108, 152, 0.5) !important; }
-
-.welcome .wtp__boxes a.box {
-  position: relative; }
-  .welcome .wtp__boxes a.box .title {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    width: 100%;
-    color: #FFF;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-    opacity: 1;
-    transition: all 0.2s ease-in-out; }
-  .welcome .wtp__boxes a.box .shadow {
-    background: rgba(148, 17, 52, 0.9); }
-  .welcome .wtp__boxes a.box:hover .title {
-    opacity: 0;
-    transition: all 0.2s ease-in-out; }
-  .welcome .wtp__boxes a.box:hover .shadow {
-    background: rgba(148, 17, 52, 0.25); }
-
-.welcome [class*="col"] {
-  padding: 0; }
-
-.welcome a.box {
-  display: block;
-  position: relative;
-  height: 205px;
-  margin: 0;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  background-color: #ececec;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.2s ease-in-out;
-  overflow: hidden; }
-  .welcome a.box i {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    font-size: 54px;
-    opacity: 0;
-    color: #FFF;
-    z-index: 99;
-    transition: all 0.2s ease-in-out; }
-  .welcome a.box .bg-img {
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: all 0.2s ease-in-out; }
-  .welcome a.box .gradient {
-    position: absolute;
-    top: 0;
-    background: linear-gradient(to bottom, transparent 0, transparent 70%, rgba(0, 0, 0, 0.5) 100%);
-    height: 100%;
-    width: 100%;
-    z-index: 2; }
-  .welcome a.box .shadow {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    transition: all 0.2s ease-in-out; }
-  .welcome a.box .title {
-    position: absolute;
-    font: bold 20px/24px "Cutive", serif;
-    color: #FFF;
-    bottom: 40%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    opacity: 1;
-    z-index: 3;
-    transition: all 0.1s ease-in-out; }
-    .welcome a.box .title.title--cap {
-      font-family: "Raleway", sans-serif !important;
-      text-transform: uppercase !important; }
-  .welcome a.box:hover i {
-    top: 40%;
-    opacity: 1;
-    transition: opacity 1s, top 0.2s; }
-  .welcome a.box:hover .bg-img {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out; }
-  .welcome a.box:hover .shadow {
-    background: rgba(241, 178, 14, 0.95);
-    transition: all 0.2s ease-in-out; }
-  .welcome a.box:hover .title {
-    opacity: 0;
-    margin-bottom: -10px;
-    transition: all 0.4s ease-in-out; }
-  @media (max-width: 767px) {
-    .welcome a.box {
-      margin-left: 0; } }
-
-.welcome a.box--tall {
-  height: 325px; }
-
-.welcome a.box--desc {
-  height: 420px !important;
-  background: #F1B20E;
-  color: #FFF !important;
-  padding: 45px 30px;
-  margin-left: 0; }
-  .welcome a.box--desc .box--desc__title {
-    font: 900 55px/55px "Raleway", sans-serif;
-    margin-bottom: 50px; }
-  @media (max-width: 991px) {
-    .welcome a.box--desc {
-      padding: 20px; } }
-
-.welcome a.box--video {
-  overflow: hidden; }
-  .welcome a.box--video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; }
-  .welcome a.box--video i {
-    opacity: 1;
-    top: 40%; }
-  .welcome a.box--video:focus i, .welcome a.box--video:active i, .welcome a.box--video:visited i {
-    opacity: 0;
-    z-index: -1; }
-  .welcome a.box--video:focus .shadow, .welcome a.box--video:active .shadow, .welcome a.box--video:visited .shadow {
-    z-index: -1; }
-
-.box--upcoming {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg); }
-
-.box--youtube {
-  background-image: url(); }
-
-.box--toys {
-  background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg); }
-
-.box--play {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg); }
-
-.box--mini {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg); }
-
-.box--camp {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg); }
-
-.box--hiking {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg); }
-
-.box--amen {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg); }
-
-.box--bag {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg); }
-
-.box--paint {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg); }
-
-.box--pool {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg); }
-
-.box--near {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
-
-.box--camp2 {
-  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
-
-.pw--home-testi {
-  background: rgba(0, 0, 0, 0.7); }
-
-.owc-home {
-  width: 60%;
-  margin: auto;
-  padding-top: 125px;
-  text-align: center; }
-  .owc-home p {
-    font: normal 22px/30px "Raleway", sans-serif;
-    color: #FFF; }
-
-/* 
-*
-*	Ways to Play 
-*
--------------------- */
-.wts {
-  background: #941134; }
-  .wts .wts_title {
-    color: #FFF;
-    background: #7a0c29;
-    padding: 20px; }
-    .wts .wts_title h1 {
-      font: 800 55px/50px "Raleway", sans-serif; }
-
-.service-boxes {
-  text-align: center;
-  padding: 40px 0; }
-  .service-boxes .service-box {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: #941134;
-    margin-bottom: 10px; }
-    .service-boxes .service-box .service-icon a {
-      color: #FFF;
-      text-decoration: none; }
-    .service-boxes .service-box .service-icon i {
-      display: inline-block;
-      font-size: 75px;
-      line-height: 80px;
-      margin-bottom: 20px;
-      transition: all 0.5s ease;
-      -webkit-transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    .service-boxes .service-box .service-icon h4 {
-      padding: 25px 0 5px;
-      -webkit-transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    .service-boxes .service-box:hover {
-      background: #7a0c29; }
-      .service-boxes .service-box:hover .service-icon i {
-        color: #FFF;
-        transition: all 0.5s ease;
-        font-size: 54px;
-        line-height: 80px;
-        -webkit-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-        transform: rotateY(360deg); }
-      .service-boxes .service-box:hover .service-icon h4 {
-        color: #FFF;
-        transition: color 0.5s ease; }
-
-.service-box:hover {
-  transition: background-color 0.5s ease;
-  background-color: #5f6273; }
 
 .btn-ghost {
   display: inline-block;
@@ -8664,3 +8402,280 @@ h1, h2, h3, h4, h5, h6 {
 .blog--home #owc-home--blog .owl-nav.disabled,
 .blog--home #owc-home--blog .owl-dots.disabled {
   display: inline-block !important; }
+
+/*
+*
+*	Home
+*
+----------------------- */
+.bg-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  z-index: -1; }
+
+.welcome [class*="col"] {
+  padding: 0; }
+
+@media (max-width: 767px) {
+  .welcome {
+    padding: 0; } }
+
+.welcome .wtp__boxes .wtp--padding {
+  padding-right: 2px !important; }
+
+.welcome .wtp__boxes a.box {
+  position: relative; }
+  .welcome .wtp__boxes a.box .title {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    opacity: 1;
+    transition: all 0.2s ease-in-out; }
+    .welcome .wtp__boxes a.box .title small {
+      font-family: "Raleway", sans-serif; }
+  .welcome .wtp__boxes a.box .shadow {
+    background: rgba(148, 17, 52, 0.9); }
+  .welcome .wtp__boxes a.box:hover .title {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; }
+  .welcome .wtp__boxes a.box:hover .shadow {
+    background: rgba(148, 17, 52, 0.25); }
+
+.welcome a.box {
+  display: block;
+  position: relative;
+  height: 205px;
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: #ececec;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden; }
+  .welcome a.box i {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 54px;
+    opacity: 0;
+    color: #FFF;
+    z-index: 99;
+    transition: all 0.2s ease-in-out; }
+  .welcome a.box .bg-img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.2s ease-in-out; }
+  .welcome a.box .gradient {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, transparent 0, transparent 70%, rgba(0, 0, 0, 0.5) 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 2; }
+  .welcome a.box .shadow {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out; }
+  .welcome a.box .title {
+    position: absolute;
+    font: bold 1rem/1.1rem "Cutive", serif;
+    color: #FFF;
+    bottom: 5px;
+    right: 10px;
+    text-align: center;
+    opacity: 1;
+    z-index: 3;
+    transition: all 0.1s ease-in-out; }
+    .welcome a.box .title.title--cap {
+      font-family: "Raleway", sans-serif !important;
+      text-transform: uppercase !important; }
+    @media (max-width: 767px) {
+      .welcome a.box .title {
+        font-size: 0.6rem; } }
+    @media (max-width: 575px) {
+      .welcome a.box .title {
+        font-size: 1.5rem; } }
+  .welcome a.box:hover i {
+    top: 40%;
+    opacity: 1;
+    transition: opacity 1s, top 0.2s; }
+  .welcome a.box:hover .bg-img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out; }
+  .welcome a.box:hover .shadow {
+    background: rgba(241, 178, 14, 0.95);
+    transition: all 0.2s ease-in-out; }
+  .welcome a.box:hover .title {
+    opacity: 0;
+    margin-bottom: -10px;
+    transition: all 0.4s ease-in-out; }
+  @media (max-width: 767px) {
+    .welcome a.box {
+      margin-left: 0; } }
+
+.welcome a.box--tall {
+  height: 325px; }
+
+.welcome a.box--desc {
+  height: 420px !important;
+  background: #F1B20E;
+  color: #FFF !important;
+  padding: 45px 30px;
+  margin-left: 0; }
+  .welcome a.box--desc .box--desc__title {
+    font: 100 55px/55px "Raleway", sans-serif;
+    margin-bottom: 50px; }
+  @media (max-width: 991px) {
+    .welcome a.box--desc {
+      padding: 20px; } }
+
+.welcome a.box--video {
+  overflow: hidden; }
+  .welcome a.box--video iframe {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    z-index: 1; }
+  .welcome a.box--video i {
+    opacity: 1;
+    top: 40%; }
+  .welcome a.box--video:focus i, .welcome a.box--video:active i, .welcome a.box--video:visited i {
+    opacity: 0;
+    z-index: -1; }
+  .welcome a.box--video:focus .shadow, .welcome a.box--video:active .shadow, .welcome a.box--video:visited .shadow {
+    z-index: -1; }
+
+.box--upcoming {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/14445026_1216046245105621_3306610808690776345_o.jpg); }
+
+.box--youtube {
+  background-image: url(); }
+
+.box--toys {
+  background-image: url(/wp-content/uploads/2016/12/IMG_0770-1.jpg); }
+
+.box--play {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10357639_746169108760006_3475882466858522686_o.jpg); }
+
+.box--mini {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/10333777_736341299742787_1396436187858928254_o.jpg); }
+
+.box--camp {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/26.jpg); }
+
+.box--hiking {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/12080222_988062094570705_1048278132340532445_o.jpg); }
+
+.box--amen {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/554316_408124662564454_1853705012_n.jpg); }
+
+.box--bag {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/481262_408126025897651_211010353_n.jpg); }
+
+.box--paint {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/479702_408126822564238_590652088_n.jpg); }
+
+.box--pool {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/547529_408142449229342_1533011197_n.jpg); }
+
+.box--near {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/monticello.jpg); }
+
+.box--camp2 {
+  background-image: url(http://cycat4.com/wp-content/uploads/2016/12/255146_203987516311504_746475_n.jpg); }
+
+.pw--home-testi {
+  background: rgba(0, 0, 0, 0.7); }
+
+.owc-home {
+  width: 60%;
+  margin: auto;
+  padding-top: 125px;
+  text-align: center; }
+  .owc-home p {
+    font: normal 22px/30px "Raleway", sans-serif;
+    color: #FFF; }
+
+/* 
+*
+*	Ways to Play 
+*
+-------------------- */
+.wts {
+  background: #941134; }
+  .wts .btn-ghost:hover {
+    background: #fff;
+    color: #000; }
+  .wts .wts_title {
+    color: #FFF;
+    background: #7a0c29;
+    padding: 20px;
+    margin-top: 80px; }
+    .wts .wts_title h1 {
+      font: 100 55px/50px "Raleway", sans-serif; }
+
+.service-boxes {
+  text-align: center;
+  padding: 40px 0; }
+  .service-boxes .service-box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #941134;
+    margin-bottom: 10px; }
+    .service-boxes .service-box .service-icon a {
+      color: #FFF;
+      text-decoration: none; }
+    .service-boxes .service-box .service-icon i {
+      display: inline-block;
+      font-size: 75px;
+      line-height: 80px;
+      margin-bottom: 20px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+    .service-boxes .service-box .service-icon h4 {
+      padding: 25px 0 5px;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+    .service-boxes .service-box:hover {
+      background: #7a0c29; }
+      .service-boxes .service-box:hover .service-icon i {
+        color: #FFF;
+        transition: all 0.5s ease;
+        font-size: 54px;
+        line-height: 80px;
+        -webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        transform: rotateY(360deg); }
+      .service-boxes .service-box:hover .service-icon h4 {
+        color: #FFF;
+        transition: color 0.5s ease; }
+
+.service-box:hover {
+  transition: background-color 0.5s ease;
+  background-color: #5f6273; }
