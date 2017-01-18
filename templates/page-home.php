@@ -72,10 +72,10 @@ get_header(); ?>
 
           <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/background.png">
           <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
-              top: 210vh;
-              z-index:-1;
+              top: 172vh;
+          "><img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="
+              top: 209vh;
           ">
-          <!-- <img class="bg-shape" src="http://cycat4.com/wp-content/uploads/2017/01/bg-shape-3.png" style="top: 209vh;"> -->
 
           <section class="welcome container">
             <div class="wtp__boxes">
@@ -108,7 +108,7 @@ get_header(); ?>
             </div>
             <div class="col-lg-9 col-md-8">
               <div class="col-md-4">
-                <a class="box">                      
+                <a href="http://cycat4.com/ways-to-play/lake-ruth-ann/" class="box">                      
                   <div class="bg-img box--toys"></div>                    
                   <div class="shadow"></div>
                   <h5 class="title title--cap">Lake Toys</h5>                 
@@ -116,15 +116,14 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-md-4">
-                <a class="box">                      
+                <a href="http://cycat4.com/ways-to-play/playgrounds/" class="box">                      
                   <div class="bg-img box--play"></div>                    
                   <div class="shadow"></div>
-                  <h5 class="title title--cap">Playgrounds</h5>                
-                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                  <h5 class="title title--cap">Playgrounds</h5>                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="col-md-4">
-                <a class="box">                      
+                <a href="http://cycat4.com/ways-to-play/mini-golf-2/" class="box">                      
                   <div class="bg-img box--mini"></div>                    
                   <div class="shadow"></div>
                   <h5 class="title title--cap">Mini Golf</h5>                      
@@ -132,7 +131,7 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4">
-                <a class="box">                  
+                <a href="http://cycat4.com/ways-to-play/the-pool/" class="box">                  
                   <div class="bg-img box--pool"></div>
                   <div class="shadow"></div>
                   <h5 class="title title--cap">The Pool</h5>
@@ -140,7 +139,7 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-lg-9 col-md-8">
-                <a class="box">                      
+                <a href="http://cycat4.com/more-ways-to-play/" class="box">                      
                   <div class="bg-img box--hiking"></div>                    
                   <div class="shadow"></div>
                   <h5 class="title title--cap">Hiking Trails</h5>                      
@@ -154,7 +153,7 @@ get_header(); ?>
             <!-- What's Near Us -->
             <div class="wtp__boxes">
               <div class="col-md-9">
-                <a class="ml-0 box box--tall">                  
+                <a href="http://cycat4.com/whats-near-us/" class="ml-0 box box--tall">                  
                   <div class="bg-img box--near"></div>                  
                   <div class="shadow shadow--blue"></div>
                   <h5 class="title">What's Near Us <br>
@@ -164,7 +163,7 @@ get_header(); ?>
                 </a>
               </div>
               <div class="col-md-3 wtp--padding--left">
-                <a class="box box--tall">                  
+                <a href="http://cycat4.com/ways-to-play/fishing-and-boating/" class="box box--tall">                  
                   <div class="bg-img box--camp2"></div>                  
                   <div class="shadow shadow--blue"></div>
                   <h5 class="title">???</h5>                  
@@ -310,23 +309,23 @@ get_header(); ?>
             <div class="owl-carousel owl-theme owc-home">
               <div class="item">
                 <p> 
-                  My granddaughters and I had a wonderful weekend at your campground. There was never a dull moment! The girls were entertained and had a blast the entire weekend. The cabin was clean, comfortable and had all the conveniences that Grandmother needed. Thank you and we will definitely be back to camp again. 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
                 </p>
                 <p>
-                  Brenda
+                  Testimonail #1
                 </p>
               </div>
               <div class="item">
                 <p> 
-                  Had a great time this weekend! Thanks for all the kids stuff you do!! We only live 10 minutes away but love to camp with you guys several times a year!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
                 </p>
                 <p>
-                  Donna
+                  Testimonail #2
                 </p>
               </div>
               <div class="item">
-                <p>What a great place to stay. We rented the Flicker camper. Very clean and comfortable. Kids loved fishing in the lake. Tammy and Brian made sure we were comfortable and enjoying our stay.
-                  <cite>Sue</cite>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae nisi aliquid nesciunt quia, nihil! Sit perspiciatis illo blanditiis eligendi amet similique itaque nemo delectus nisi! Praesentium atque magnam laboriosam.
+                  <cite>Testimonail #3</cite>
                 </p>
               </div>
             </div>

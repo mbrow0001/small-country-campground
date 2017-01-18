@@ -6,6 +6,7 @@
 function cyberbility_starter_scripts() {
 	wp_enqueue_style( 'cyberbility-starter-style', get_template_directory_uri() . '/css/style.css', '0.0.1');
 	wp_enqueue_style( 'matt-css', get_template_directory_uri() . '/css/matt.css', '0.0.1');
+	wp_enqueue_style( 'ben-css', get_template_directory_uri() . '/css/ben.css', '0.0.1');
 	wp_enqueue_script('jquery'); 
 	wp_enqueue_script( 'cyberbility-starter-js', get_template_directory_uri() . '/js/theme.js', array(), '0.0.1', true );
 	wp_enqueue_script( 'youtube-api',  'https://www.youtube.com/iframe_api', array(), '0.0.1', true );
