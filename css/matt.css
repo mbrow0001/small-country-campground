@@ -15,7 +15,7 @@
 
 #colorstrip{
 	height: 5px;
-	width:19%;
+	width:100%;
 	border-style: solid;
 	border-color: rgb(241, 178, 14);
 	background-color: rgb(241, 178, 14);
@@ -85,4 +85,52 @@
 .nearusbox--lead__title{
 	font-family: Raleway;
 	margin-bottom: 30px;
+}
+
+.footer-wrapper-outer{
+	background-color: #106C98;
+	text-align: center;
+	margin-bottom: -100%;
+	color: white;
+	padding: 50px 0;
+
+}
+.footer-wrapper-outer a{
+	color: #F1B20E;
+}
+
+
+
+.row-spacing > .col-spacing {
+                        display: inline-block;
+                        *display: inline; /* For IE7 */
+                        zoom: 1; /* Trigger hasLayout */
+                        width: 10%;
+                        text-align: center;
+                        white-space:pre-line;
+ }
+
+
+
+
+.wts-row{
+ 	text-align: justify;
+ 	
+ }
+
+.breakout {
+  position:relative;
+  display:table;
+  width:100vw;
+  left:50%;
+}
+
+/* The content
+Generic*/
+.breakout > * {
+  position:relative; 
+  margin-left:auto; 
+  margin-right:auto;   
+  left:-50% ;
+  max-height:486px;
 }

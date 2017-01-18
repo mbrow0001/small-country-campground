@@ -17,7 +17,8 @@ if ( $header !== 'default') {
   get_header();
 } ?>
 
-<div class="header-img" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+<div class="header-img">
+  <?php the_post_thumbnail(); ?>
   <div class="shadow"></div>
   <div class="title">
     <?php the_title(); ?>
